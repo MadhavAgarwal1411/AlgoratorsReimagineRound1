@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+.page1{
+    width: 100vw;
+    height: 100vh;
+    background-color: #B1ACA6;
+}
+.page1 .heading{
+    font-size: 2rem;
+    position: relative;
+    top: 10vh;
+    margin: 0 10vh 0 10vh;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+.page1 .heading h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons{
+    position: relative;
+    top: calc(50% - 30%);
+    left: 10%;
+    width: 80%;
+    height: 50%;
+    background-color: rgba(152, 165, 12, 0.171);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.buttons .btn{
+    font-size: 2rem;
+    padding:35px 10px;
+    width:70%;
+    background:linear-gradient(10deg, yellow,brown,yellow);
+    color: white;
+    text-align: center;
+    margin:auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.buttons .btn1{
+    position: absolute;
+    top: 40px;
+}
+
+.buttons .btn2{
+    position: absolute;
+    top: 160px;
+}
+
+.buttons .btn1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background: linear-gradient(90deg, transparent, white, transparent);
+    width: 322px;
+    height: 106px;
+    transition: 1s;
+}
+
+.buttons .btn1:hover::before{
+    position: absolute;
+    top: 0;
+    left: 100%;    
+    transition: 1s;
+}
+
+.buttons .btn2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background: linear-gradient(90deg, transparent, white, transparent);
+    width: 322px;
+    height: 106px;
+    transition: 1s;
+}
+
+.buttons .btn2:hover::before{
+    position: absolute;
+    top: 0;
+    left: 100%;    
+    transition: 1s;
+}
+
+.page2{
+    width: 100vw;
+    height: 100vh;
+    background-color: #d77c06;
+}
+.page2 .container{
+    display: flex;
+}
+.page2 .container .section1{
+    width: 50%;
+    height: 100%;
+    background-color: #451a17;
+}
+.page2 .container .section2{
+    width: 50%;
+    height: 100%;
+    background-color: #161312;
+}
+.page2 .container .section2 .heading{
+    height: 50%;
+    width: 100%;
+    background-color: aqua;
+}
+
+.page2 .container .section2 .package{
+    height: 50%;
+    width: 100%;
+    background-color: rgb(72, 0, 255);
+}
