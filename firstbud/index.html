@@ -1,27 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="slider-wrapper">
-            <div class="slider">
-                <img id="slide1" src="https://d1rgpf387mknul.cloudfront.net/products/Home/ms/2x_ms_20240527020647925906_750x400gif" alt="">
-                <img id="slide2" src="https://d1rgpf387mknul.cloudfront.net/products/Home/ms/2x_ms_20240521084855885376_750x400jpg" alt="">
-                <img id="slide3" src="https://d1rgpf387mknul.cloudfront.net/products/Home/ms/2x_ms_20231103091803598504_750x400gif" alt="">
-            </div>
-            <div class="slider-nav">
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="page1">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img
+                        id="slide1"
+                        src="assets/images/slider/img1.webp"
+                        alt=""
+                    />
+                    <img
+                        id="slide2"
+                        src="assets/images/slider//img2.webp"
+                        alt=""
+                    />
+                    <img
+                        id="slide3"
+                        src="assets/images/slider//img4.webp"
+                        alt=""
+                    />
+                </div>
+                <div class="slider-nav">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
             </div>
         </div>
-        <div class="page2"></div>
-    </div>
-    <script src="script.js"></script>
-</body>
+        <div class="page2">
+            <div class="container">
+                <div class="about">
+                    <h3>WELCOME TO FIRST BUD ORGANICS</h3>
+                    <h1>From the farm to your table</h1>
+                    <p>
+                        Embrace a life of purity and excellence with our
+                        commitment to bringing nature's finest directly to your
+                        home. From farm to table, our seamless journey ensures
+                        the freshest, 100% pure organic delights. Dive into our
+                        diverse range of edibles, health, and skincare
+                        essentials, all at friendly prices. Trust in our legacy
+                        of purity and excellence, and join us in setting new
+                        benchmarks for a healthier tomorrow
+                    </p>
+                    <button>ABOUT US</button>
+                </div>
+                <div class="box">
+                    <div class="images">
+                        <span style="--i:1;" class = "span1">
+                            <img
+                                src="assets/images/slider2/image1.png"
+                                alt=""
+                            />
+                        </span>
+                        <span style="--i:2;" class = "span2">
+                            <img
+                                src="assets/images/slider2/image2.png"
+                                alt=""
+                            />
+                        </span>
+                        <span style="--i:3;" class = "span3">
+                            <img
+                                src="assets/images/slider2/image3.png"
+                                alt=""
+                            />
+                        </span>
+                        <span style="--i:4;" class = "span4">
+                            <img
+                                src="assets/images/slider2/image4.png"
+                                alt=""
+                            />
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            let box = document.querySelector(".images");
+            window.onmousemove = function(e) {
+                let x = e.clientX/2;
+                box.style.transform = "perspective(1000px) rotateY(" + x + "deg)";
+            }
+        </script>
+        <script src="script.js"></script>
+    </body>
 </html>
