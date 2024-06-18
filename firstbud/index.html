@@ -8,29 +8,18 @@
     </head>
     <body>
         <div class="page1">
-            <div class="slider-wrapper">
-                <div class="slider">
-                    <img
-                        id="slide1"
-                        src="assets/images/slider/img1.webp"
-                        alt=""
-                    />
-                    <img
-                        id="slide2"
-                        src="assets/images/slider//img2.webp"
-                        alt=""
-                    />
-                    <img
-                        id="slide3"
-                        src="assets/images/slider//img4.webp"
-                        alt=""
-                    />
-                </div>
-                <div class="slider-nav">
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                </div>
+            <input id="slide1" type="radio" name="group" checked>
+            <input id="slide2" type="radio" name="group">
+            <input id="slide3" type="radio" name="group">
+            <div class="dots">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </div>
+            <div class="slider">
+                <div class="slide" for="slide1" style="--img:url(assets/images/slider/img1.webp);"></div>
+                <div class="slide" for="slide2" style="--img:url(assets/images/slider/img2.webp);"></div>
+                <div class="slide" for="slide3" style="--img:url(assets/images/slider/img4.webp);"></div>
             </div>
         </div>
         <div class="page2">
@@ -52,25 +41,25 @@
                 </div>
                 <div class="box">
                     <div class="images">
-                        <span style="--i:1;" class = "span1">
+                        <span style="--i:1;">
                             <img
                                 src="assets/images/slider2/image1.png"
                                 alt=""
                             />
                         </span>
-                        <span style="--i:2;" class = "span2">
+                        <span style="--i:2;">
                             <img
                                 src="assets/images/slider2/image2.png"
                                 alt=""
                             />
                         </span>
-                        <span style="--i:3;" class = "span3">
+                        <span style="--i:3;">
                             <img
                                 src="assets/images/slider2/image3.png"
                                 alt=""
                             />
                         </span>
-                        <span style="--i:4;" class = "span4">
+                        <span style="--i:4;">
                             <img
                                 src="assets/images/slider2/image4.png"
                                 alt=""
