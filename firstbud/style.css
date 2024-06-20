@@ -180,7 +180,6 @@ body::-webkit-scrollbar{
     -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0002)
 }
 
-
 /* page 3 */
 
 .page3{
@@ -203,7 +202,7 @@ body::-webkit-scrollbar{
 .page3 .container .box{
     position: relative;
     width: 300px;
-    height: 400px;
+    height: 300px;
     margin: 40px;
     background: #0006;
     border-radius: 20px;
@@ -258,3 +257,29 @@ body::-webkit-scrollbar{
 .page3 .container .box:hover .product{
     transform: translate3d(-50%, -50%, 100px);
 }
+#box1{
+    background-color: #BBB4C4;
+}
+#box2{
+    background-color: #DFB2AF;
+}
+#box3{
+    background-color: #D6B273;
+}
+#box4{
+    background-color: #9EC1B0;
+}
+#box5{
+    background-color: #157874;
+}
+#box6{
+    background-color: #D8A380;
+}
+#box7{
+    background-color: #6781AA;
+}
+#box8{
+    background-color: #C0D5EE;
+}
+/* page4 */
+
