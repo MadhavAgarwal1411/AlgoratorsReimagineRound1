@@ -1,81 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <div class="page1">
-            <input id="slide1" type="radio" name="group" checked>
-            <input id="slide2" type="radio" name="group">
-            <input id="slide3" type="radio" name="group">
-            <div class="dots">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-            </div>
-            <div class="slider">
-                <div class="slide" for="slide1" style="--img:url(assets/images/slider/img1.webp);"></div>
-                <div class="slide" for="slide2" style="--img:url(assets/images/slider/img2.webp);"></div>
-                <div class="slide" for="slide3" style="--img:url(assets/images/slider/img4.webp);"></div>
-            </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="page1">
+        <input id="slide1" type="radio" name="group" checked />
+        <input id="slide2" type="radio" name="group" />
+        <input id="slide3" type="radio" name="group" />
+        <div class="dots">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
         </div>
-        <div class="page2">
-            <div class="container">
-                <div class="about">
-                    <h3>WELCOME TO FIRST BUD ORGANICS</h3>
-                    <h1>From the farm to your table</h1>
-                    <p>
-                        Embrace a life of purity and excellence with our
-                        commitment to bringing nature's finest directly to your
-                        home. From farm to table, our seamless journey ensures
-                        the freshest, 100% pure organic delights. Dive into our
-                        diverse range of edibles, health, and skincare
-                        essentials, all at friendly prices. Trust in our legacy
-                        of purity and excellence, and join us in setting new
-                        benchmarks for a healthier tomorrow
-                    </p>
-                    <button>ABOUT US</button>
-                </div>
-                <div class="box">
-                    <div class="images">
-                        <span style="--i:1;">
-                            <img
-                                src="assets/images/slider2/image1.png"
-                                alt=""
-                            />
-                        </span>
-                        <span style="--i:2;">
-                            <img
-                                src="assets/images/slider2/image2.png"
-                                alt=""
-                            />
-                        </span>
-                        <span style="--i:3;">
-                            <img
-                                src="assets/images/slider2/image3.png"
-                                alt=""
-                            />
-                        </span>
-                        <span style="--i:4;">
-                            <img
-                                src="assets/images/slider2/image4.png"
-                                alt=""
-                            />
-                        </span>
-                    </div>
+        <div class="slider">
+            <div class="slide" for="slide1" style="--img: url(assets/images/slider/img1.webp)"></div>
+            <div class="slide" for="slide2" style="--img: url(assets/images/slider/img2.webp)"></div>
+            <div class="slide" for="slide3" style="--img: url(assets/images/slider/img4.webp)"></div>
+        </div>
+    </div>
+    <div class="page2">
+        <div class="container">
+            <div class="about">
+                <h3>WELCOME TO FIRST BUD ORGANICS</h3>
+                <h1>From the farm to your table</h1>
+                <p>
+                    Embrace a life of purity and excellence with our
+                    commitment to bringing nature's finest directly to your
+                    home. From farm to table, our seamless journey ensures
+                    the freshest, 100% pure organic delights. Dive into our
+                    diverse range of edibles, health, and skincare
+                    essentials, all at friendly prices. Trust in our legacy
+                    of purity and excellence, and join us in setting new
+                    benchmarks for a healthier tomorrow
+                </p>
+                <button>ABOUT US</button>
+            </div>
+            <div class="box">
+                <div class="images">
+                    <span style="--i: 1">
+                        <img src="assets/images/slider2/image1.png" alt="" />
+                    </span>
+                    <span style="--i: 2">
+                        <img src="assets/images/slider2/image2.png" alt="" />
+                    </span>
+                    <span style="--i: 3">
+                        <img src="assets/images/slider2/image3.png" alt="" />
+                    </span>
+                    <span style="--i: 4">
+                        <img src="assets/images/slider2/image4.png" alt="" />
+                    </span>
                 </div>
             </div>
         </div>
-        <script>
-            let box = document.querySelector(".images");
-            window.onmousemove = function(e) {
-                let x = e.clientX/2;
-                box.style.transform = "perspective(1000px) rotateY(" + x + "deg)";
-            }
-        </script>
-        <script src="script.js"></script>
-    </body>
+    </div>
+    </div>
+    <div class="page3">
+        <div class="container">
+            <div class="box">
+                <h2 class="name">Aloe Veera</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <img src="assets/images/page3 grid/img1.png" alt="" class="product" />
+            </div>
+            <div class="box">
+                <h2 class="name">Anti Gel</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <img src="assets/images/page3 grid/img2.png" alt="" class="product" />
+            </div>
+            <div class="box">
+                <h2 class="name">Aloe Veera</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <img src="assets/images/page3 grid/img3.png" alt="" class="product" />
+            </div>
+            <div class="box">
+                <h2 class="name">Anti Gel</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <img src="assets/images/page3 grid/img4.png" alt="" class="product" />
+            </div>            <div class="box">
+                <h2 class="name">Aloe Veera</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <img src="assets/images/page3 grid/img5.png" alt="" class="product" />
+            </div>
+            <div class="box">
+                <h2 class="name">Anti Gel</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <img src="assets/images/page3 grid/img6.png" alt="" class="product" />
+            </div>            <div class="box">
+                <h2 class="name">Aloe Veera</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <img src="assets/images/page3 grid/img7.png" alt="" class="product" />
+            </div>
+            <div class="box">
+                <h2 class="name">Anti Gel</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <img src="assets/images/page3 grid/img8.png" alt="" class="product" />
+            </div>
+        </div>
+    </div>
+    <script>
+        let box = document.querySelector(".images");
+        window.onmousemove = function (e) {
+            let x = e.clientX / 2;
+            box.style.transform =
+                "perspective(1000px) rotateY(" + x + "deg)";
+        };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 0.5
+	});
+    </script>
+    <script src="script.js"></script>
+</body>
+
 </html>
