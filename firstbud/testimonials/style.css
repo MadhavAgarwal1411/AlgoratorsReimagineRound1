@@ -1,0 +1,48 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.testimonials h1{
+    text-align: center;
+    margin: 50px 0;
+}
+.testimonials .slider{
+    position: relative;
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+}
+.testimonials .slider .item img{
+    border: 2px solid #08a85d;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+.testimonials .item{
+    position: absolute;
+    width: 200px;
+    height: 320px;
+    text-align: justify;
+    background: linear-gradient(to top right, green,white,#00662d);
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    left: calc(50% - 110px);
+    top: 0;
+}
+.testimonials #nexttest,#prevtest{
+    position: absolute;
+    top: 40%;
+    color: #000;
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    left: 50px;
+}
+.testimonials #nexttest{
+    left: unset;
+    right: 50px;
+}
