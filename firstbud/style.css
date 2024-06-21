@@ -281,19 +281,16 @@ body::-webkit-scrollbar{
 /* page4 */
 
 .page4 {
-    position:relative;
-    top:0;
-    left: 0;
     height: 100vh;
     width: 100vw;
 }
 .page4 .container{
     height: 100%;
     width: 100vw;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .page4 .container .image{
-    width: 50vw;
     height: 100%;
 }
 .page4 .container .image img{
@@ -303,7 +300,6 @@ body::-webkit-scrollbar{
 }
 .page4 .container .section{
     position:relative;
-    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -326,6 +322,56 @@ body::-webkit-scrollbar{
     font-size: 1.2rem;
 }
 .page4 .container .section .contain button{
+    padding: 0.7rem 4rem;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #00662D;
+    color:  #fff;
+    font-weight: 600;
+}
+
+.page6{
+    height: 100vh;
+    width: 100vw;
+}
+.page6 .container{
+    height: 100%;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.page6 .container .image{
+    height: 100%;
+}
+.page6 .container .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.page6 .container .section{
+    position:relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page6 .container .section .contain{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+.page6 .container .section .contain h1{
+    font-size: 2.5rem;
+    color: #00662D;
+    font-weight: 600;
+}
+.page6 .container .section .contain p{
+    font-size: 1.2rem;
+}
+.page6 .container .section .contain button{
     padding: 0.7rem 4rem;
     border: 0px;
     border-radius: 5px;
