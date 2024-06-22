@@ -281,7 +281,6 @@ body::-webkit-scrollbar{
 /* page4 */
 
 .page4 {
-    height: 100vh;
     width: 100vw;
 }
 .page4 .container{
@@ -291,7 +290,7 @@ body::-webkit-scrollbar{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .page4 .container .image{
-    height: 100%;
+    height: 100vh;
 }
 .page4 .container .image img{
     width: 100%;
@@ -300,7 +299,7 @@ body::-webkit-scrollbar{
 }
 .page4 .container .section{
     position:relative;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -331,17 +330,16 @@ body::-webkit-scrollbar{
 }
 
 .page6{
-    height: 100vh;
     width: 100vw;
 }
 .page6 .container{
-    height: 100%;
+    /* height: 100vh; */
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .page6 .container .image{
-    height: 100%;
+    height: 100vh;
 }
 .page6 .container .image img{
     width: 100%;
@@ -350,7 +348,7 @@ body::-webkit-scrollbar{
 }
 .page6 .container .section{
     position:relative;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -379,3 +377,4 @@ body::-webkit-scrollbar{
     color:  #fff;
     font-weight: 600;
 }
+

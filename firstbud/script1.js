@@ -1,7 +1,6 @@
 let items = document.querySelectorAll('.slider .item');
 let next = document.getElementById('nexttest');
 let prev = document.getElementById('prevtest');
-let listHTML=document.querySelector('.slider .list');
 
 let active = 3;
 function loadShow() {

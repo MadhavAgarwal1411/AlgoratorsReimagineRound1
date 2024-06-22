@@ -21,8 +21,8 @@ body{
 }
 .testimonials .item{
     position: absolute;
-    width: 200px;
-    height: 320px;
+    width: 220px;
+    height: 350px;
     text-align: justify;
     background: linear-gradient(to top right, green,white,#00662d);
     border-radius: 10px;

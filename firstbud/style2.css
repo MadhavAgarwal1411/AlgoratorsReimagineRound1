@@ -336,3 +336,33 @@
     transition: 1s;
 }
 
+
+@media screen and (max-width:990px){
+    .page5 .list .item{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:767px){
+    .page5 .list .item{
+        width: 100%;
+        font-size: 10px;
+    }
+    .page5{
+        height: 600px;
+    }
+    .page5 .list{
+        height: 100%;
+    }
+    .page5 .list .item .intro{
+        width: 50%;
+
+    }
+    .page5 .list .item img{
+        width: 40%;
+    }
+    .page5 h1{
+        font-size: 30px;
+         margin-top: 10px;
+    }
+}
