@@ -179,6 +179,13 @@ body::-webkit-scrollbar{
     object-fit: contain;
     -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0002)
 }
+.page2 .container .about p span{
+    position: relative;
+    color: #000;
+}
+.page2 .container .about p span.active{
+    color: green;
+}
 
 /* page 3 */
 
@@ -195,12 +202,14 @@ body::-webkit-scrollbar{
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    width: 100%;
+    width: 90%;
+    margin-inline: auto;
     transform-style: preserve-3d;
+    margin-bottom: 10%;
 }
 .page3 .container .box{
     position: relative;
-    height: 300px;
+    height: 370px;
     background: #0006;
     border-radius: 20px;
     transform-style: preserve-3d;
@@ -288,6 +297,7 @@ body::-webkit-scrollbar{
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    margin-bottom: 10%;
 }
 .page4 .container .image{
     height: 100vh;

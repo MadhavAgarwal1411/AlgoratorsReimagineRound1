@@ -35,7 +35,7 @@
     font-size: 50px;
     color: #00662D;
     font-weight: 300;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 
@@ -129,7 +129,7 @@
     pointer-events: none;
 }
 
-.arrows {
+.page5 .arrows {
     position: absolute;
     bottom: 210px;
     width: 1140px;
@@ -141,8 +141,8 @@
     align-items: center;
 }
 
-.arrows #next,
-.arrows #prev {
+.page5 .arrows #next,
+.page5 .arrows #prev {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -152,7 +152,7 @@
     border: 1px solid #555;
 }
 
-.arrows #back {
+.page5 .arrows #back {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 500;
     border: none;
