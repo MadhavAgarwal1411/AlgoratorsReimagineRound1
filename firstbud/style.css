@@ -145,6 +145,7 @@ body::-webkit-scrollbar{
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: rotateX(0) !important;
 }
 .page2 .container .box .images{
     position: relative;
