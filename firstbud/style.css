@@ -5,11 +5,11 @@
 }
 html, body{
     min-height: 100vh;
+    min-width: 100vw;
 }
 body{
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+
 }
 
 body::-webkit-scrollbar{
@@ -20,9 +20,9 @@ body::-webkit-scrollbar{
 
 .page1 {
     position: relative;
+    background: #000;
     height: 100vh;
     width: 100%;
-    background: #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,27 +94,27 @@ body::-webkit-scrollbar{
     position: relative;
     top: 0vh;
     overflow: auto;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     overflow-y: hidden;
 
 }
 .page2 .container{
     height: 100%;
     width: 90%;
-    display: flex;
-    align-items: center;
-    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
 }
 .page2 .container .about{
     position: relative;
-    height: 80%;
-    width: 50%;
+    height: 80vh;
+    /* width: 50%; */
     background-color: #fef9f9;
     display: flex;
     justify-content: center;
     align-items:flex-start;
     flex-direction: column;
+    margin-inline: auto;
     padding-left: 5%;
     padding-right: 10%;
 }
@@ -140,8 +140,8 @@ body::-webkit-scrollbar{
     font-weight: 600;
 }
 .page2 .container .box{
-    width: 50%;
-    height: 80%;
+    /* width: 50%; */
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,8 +184,11 @@ body::-webkit-scrollbar{
     position: relative;
     color: #000;
 }
-.page2 .container .about p span.active{
+.page2 .container .about p span.activep{
     color: green;
+}
+.page2 .container .about h1 span.activeh1{
+    color: black;
 }
 
 /* page 3 */
@@ -394,6 +397,7 @@ body::-webkit-scrollbar{
 
 .page8{
     height: 100vh;
+    width: 100vw;
 }
 
 .availableoncontainer{
@@ -402,7 +406,8 @@ body::-webkit-scrollbar{
 }
 
 .certificationbycontainer{
-    height: 50vh;
+    height: 20vh;
+
 }
 .certificationbycontainer .heading{
     margin-bottom: 40px;
