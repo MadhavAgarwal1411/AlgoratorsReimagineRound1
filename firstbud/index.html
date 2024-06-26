@@ -566,7 +566,7 @@
             </div>
         </div>
         <script>
-            let box = document.querySelector(".images");
+            let box = document.querySelector(".page2 .images");
             window.onmousemove = function (e) {
                 let x = e.clientX / 2;
                 box.style.transform =
@@ -591,7 +591,7 @@
                     span = document.createElement("span");
                     span.textContent = char;
                     textElement.appendChild(span);
-                    console.log(span.parentElement.nodeName)
+                    // console.log(span.parentElement.nodeName)
                 }
             });
 
@@ -608,19 +608,20 @@
             window.addEventListener("scroll", () => {
                 scrollDistance = window.scrollY - (window.innerHeight / 2);
                 // scrollDistance = document.getElementsByClassName("page2").scrollTop;
+                // console.log(scrollDistance);
 
                 spans.forEach((span, index) => {
                     if (span.parentElement.nodeName === "H1") {
-                        if (scrollDistance >= (index + 1) * 10) {
+                        if (scrollDistance >= ((index + 1) * 5)) {
                             span.classList.add("activeh1");
-                            console.log(span.parentElement.nodeName)
+                            // console.log(span.parentElement.nodeName)
 
                         } else {
                             span.classList.remove("activeh1");
                         }
                     }
                     if (span.parentElement.nodeName === "P") {
-                        if (scrollDistance >= index + 1) {
+                        if (scrollDistance >= ((index + 1) * 0.8)) {
                             span.classList.add("activep");
                         } else {
                             span.classList.remove("activep");
@@ -630,12 +631,14 @@
                 });
             });
         </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
             integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>        <script src="page1.js"></script>
         <script>
             VanillaTilt.init(document.querySelectorAll(".box"), {
                 max: 25,
@@ -644,8 +647,7 @@
                 "max-glare": 0.5,
             });
         </script>
+        <script src="page1.js"></script>
 
         <script src="script.js"></script>
         <script src="script1.js"></script>
-    </body>
-</html>
