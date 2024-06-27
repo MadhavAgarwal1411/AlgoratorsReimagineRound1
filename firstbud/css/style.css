@@ -554,7 +554,136 @@ body::-webkit-scrollbar{
     }
 }
 
+
 /* page9 */
+
+.page9{
+    width: 100vw;
+    margin-bottom: 50px;
+}
+
+.page9 .container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: relative;
+}
+.page9 .container .left{
+    position: sticky;
+    top: 0;
+}
+.page9 .container .right{
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.page9 .container .right h5{
+    color: #00662d;
+    letter-spacing: 0.1em;
+    opacity: 0.6;
+    margin-top: 50px;
+}
+.page9 .container .right h2{
+    color: #00662d;
+    font-size: 45px;
+    margin: 10px 0;
+}
+.page9 .container .right .section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.page9 .container .right .section .des{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page9 .container .right .section .des .buttons{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.page9 .container .right .section .des .buttons .quantity{
+    margin-right: 10px;
+}
+
+.page9 .container .right .section .des .buttons .add-to-cart:hover{
+    text-decoration: underline;
+}
+
+.page9 .container .right .section .des .price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.page9 .container .right .section .des .price .new{
+    color: orange;
+}
+.page9 .container .right .section .des .price .old{
+    text-decoration: line-through;
+}
+
+.page9 .container .right .add-set{
+    background-color: #00662d;
+    color: white;
+    margin-top: 30px;
+    padding: 15px;
+    font-weight: 700;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+@media screen and (max-width:1015px) {
+    .container .left img{
+        width: 350px;
+    }
+    .page9 .container .right h2{
+        font-size: 30px;
+    }
+    .page9 .container .right .section .des .buttons{
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    .page9 .container .right .section .des .buttons .add-to-cart{
+        margin-top: 10px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:425px){
+    .container .left img{
+        width: 366px;
+        height: 366px;
+    }
+    .page9 .container{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    .page9 .container .right h2{
+        font-size: 30px;
+    }
+    .page9 .container .left{
+        position: relative;
+    }
+}
+
+
+
+
+
+/* page10 */
 
 *{
     margin: 0;
@@ -563,49 +692,49 @@ body::-webkit-scrollbar{
 }
 
 
-.page9 footer{
+.page10 footer{
     position: relative;
     width: 100%;
     height: auto;
     padding: 50px 100px;
     background-color: #00662d;
 }
-.page9 footer .logo img{
+.page10 footer .logo img{
     width: 173px;
 }
-.page9 footer .logo{
+.page10 footer .logo{
     display: grid;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
 }
-.page9 footer .container{
+.page10 footer .container{
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 20px;
 }
-.page9 footer .container .sec h2{
+.page10 footer .container .sec h2{
     position: relative;
     color: white;
     font-weight: 500;
     margin-bottom:15px ;
 }
 
-.page9 footer .container .sec  p{
+.page10 footer .container .sec  p{
     color: white;
 }
-.page9 .sci{
+.page10 .sci{
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(4,50px);
     gap: 10px;
 }
-.page9 .sci li{
+.page10 .sci li{
     list-style: none;
 }
 
-.page9 .sci li a{
+.page10 .sci li a{
     display:inline-block;
     width: 48px;
     height: 48px;
@@ -615,52 +744,52 @@ body::-webkit-scrollbar{
     text-decoration: none;
 }
 
-.page9 .sci li a:hover{
+.page10 .sci li a:hover{
     background-color: #002d14;
 }
 
-.page9 .sci li a svg{
+.page10 .sci li a svg{
     color: white;
 }
-.page9 .quicklinks{
+.page10 .quicklinks{
     position: relative;
 }
-.page9 .quicklinks li{
+.page10 .quicklinks li{
     list-style: none;
 }
 
-.page9 .quicklinks li a{
+.page10 .quicklinks li a{
     color: white;
     text-decoration: none;
     margin-bottom: 10px;
     display: inline-block;
 }
-.page9 .quicklinks li a:hover{
+.page10 .quicklinks li a:hover{
     text-decoration: underline;
 }
-.page9 .info{
+.page10 .info{
     position: relative;
 }
-.page9 .info li{
+.page10 .info li{
     display: grid;
     grid-template-columns: 30px 1fr;
     margin-bottom: 16px;
 }
-.page9 .info li span:nth-child(1){
+.page10 .info li span:nth-child(1){
     color: white;
 }
-.page9 .info li span{
+.page10 .info li span{
     color: white;
 }
-.page9 .info a{
+.page10 .info a{
     color: white;
     text-decoration: none;
 }
-.page9 .info a:hover{
+.page10 .info a:hover{
     text-decoration: underline;
 }
 
-.page9 .copyrightText{
+.page10 .copyrightText{
     width: 100%;
     padding: 8px 100px;
     background-color: #00662d;
@@ -669,27 +798,57 @@ body::-webkit-scrollbar{
 }
 
 @media (max-width:991px) {
-    .page9 footer{
+    .page10 footer{
         padding: 40px;
     }
-    .page9 footer .container{
+    .page10 footer .container{
         grid-template-columns: repeat(2,1fr);
     }
-    .page9 .copyrightText{
+    .page10 .copyrightText{
         padding: 8px 40px;
     }
 }
 
 @media (max-width:768px){
-    .page9 footer .container{
+    .page10 footer .container{
         grid-template-columns: repeat(1,1fr);
     }
 }
 
-.page9 .copyrightText a{
+.page10 .copyrightText a{
     color: white;
     text-decoration: none;
 }
-.page9 .copyrightText a:hover{
+.page10 .copyrightText a:hover{
     text-decoration: underline;
+}
+
+
+/* btn */
+
+.btn{
+    font-size: 1em;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.btn:hover{
+    background: #00662D;
+    box-shadow: 0 0 25px #00662D,
+    0 0 100px #00662D,
+    0 0 150px #00662D;
+}
+.btn span{
+    display: inline-block;
+    transition: transform 0.5s;
+    text-shadow: 0 35px white;
+}
+
+.btn:hover span.hover{
+    transform: translateY(-35px);
+}
+.btn span.hover{
+    transform: translateY(-35px);
 }
