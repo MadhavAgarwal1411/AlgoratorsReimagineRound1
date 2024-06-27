@@ -96,8 +96,6 @@
         <!-- <div style="height: 400vh"></div> -->
     </div>
 
-
-
     <div class="page2">
         <div class="container">
             <div class="about">
@@ -631,14 +629,16 @@
         </div>
     </div>
 
-    </main>
+    
     <script>
         let box = document.querySelector(".page2 .images");
-        window.onmousemove = function (e) {
+        let page = document.querySelector(".page2");
+
+        page.addEventListener("mousemove", (e)=>{
             let x = e.clientX / 2;
             box.style.transform =
                 "perspective(1000px) rotateY(" + x + "deg)";
-        };
+        });
     </script>
     <script>
         let textElementList = document.querySelectorAll(
@@ -664,7 +664,7 @@
 
             spans.forEach((span, index) => {
                 if (span.parentElement.nodeName === "H1") {
-                    if (scrollDistance >= ((index + 1) * 5)) {
+                    if (scrollDistance >= ((index + 1) * 8)) {
                         span.classList.add("activeh1");
 
                     } else {
