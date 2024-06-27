@@ -6,20 +6,27 @@ document.addEventListener("DOMContentLoaded", function () {
     pinnedSections.forEach((section, index, sections) => {
         let img = section.querySelector(".img");
         let nextSection = sections[index + 1] || lastCard;
-        let endScalePoint = `top+=${nextSection.offsetTop - section.offsetTop} top`;
+        let endScalePoint = `top+=${
+            nextSection.offsetTop - section.offsetTop
+        } top`;
 
         gsap.to(section, {
             scrollTrigger: {
                 trigger: section,
                 start: "top top",
-                end: index === sections.length ? `+=${lastCard.offsetHeight / 2}` : footer.offsetTop - window.innerHeight,
+                end:
+                    index === sections.length
+                        ? `+=${lastCard.offsetHeight / 2}`
+                        : footer.offsetTop - window.innerHeight,
                 pin: true,
                 pinSpacing: false,
                 scrub: 1,
             },
         });
-        console.log(endScalePoint)
-            gsap.fromTo(img, {scale:1},{
+        gsap.fromTo(
+            img,
+            { scale: 1 },
+            {
                 scale: 0.5,
                 ease: "none",
                 scrollTrigger: {
@@ -27,21 +34,19 @@ document.addEventListener("DOMContentLoaded", function () {
                     start: "top top",
                     end: endScalePoint,
                     scrub: 1,
-                }
+                },
             }
-            )
-        }
-
-    );
+        );
+    });
     const heroH1 = document.querySelector(".hero h1");
     ScrollTrigger.create({
         trigger: document.body,
         start: "top top",
         end: "+=500vh",
         scrub: 1,
-        onUpdate: (self) =>{
+        onUpdate: (self) => {
             let opacityProgress = self.progress;
             heroH1.computedStyleMap.opacity = 1 - opacityProgress;
-        }
-    })
+        },
+    });
 });
