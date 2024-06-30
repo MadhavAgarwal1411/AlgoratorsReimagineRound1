@@ -4,7 +4,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const slides = document.querySelectorAll(".slide");
     const page1 = document.querySelector(".page1");
-    const body = document.querySelector('body');
+    const page2 = document.querySelector(".page2");
+
+    const body = document.querySelector("body");
 
     let currentSlideIndex = 0;
     let isAnimating = false;
@@ -28,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const slide = slides[index];
         const img = slide.querySelector("img");
         currentTopValue -= 30;
-        
+
         elements.forEach((elem) => {
             gsap.to(document.querySelector(elem.selector), {
                 y: `${currentTopValue}px`,
@@ -99,30 +101,27 @@ document.addEventListener("DOMContentLoaded", function () {
             "<"
         );
     }
-    page1.addEventListener("wheel", (e) => {
-        if (isAnimating) return;
+    console.log(page1.offsetHeight);
+    if (page1.offsetHeight) {
+        page1.addEventListener("wheel", (e) => {
+            if (isAnimating) return;
 
-        if(e.deltaY > 0 && currentSlideIndex === slides.length - 1){
-            body.classList.remove('stop-scrolling');
-        }else{
-            body.classList.add('stop-scrolling');
+            if (e.deltaY > 0 && currentSlideIndex === slides.length - 1) {
+                body.classList.remove("stop-scrolling");
+            } else {
+                body.classList.add("stop-scrolling");
 
-            if (e.deltaY > 0 && currentSlideIndex < slides.length - 1) {
-            
-                showSlide(currentSlideIndex + 1);
-                currentSlideIndex++;
-    
-    
-            } else if (e.deltaY < 0 && currentSlideIndex > 0) {
-                hideSlide(currentSlideIndex);
-                currentSlideIndex--;
+                if (e.deltaY > 0 && currentSlideIndex < slides.length - 1) {
+                    showSlide(currentSlideIndex + 1);
+                    currentSlideIndex++;
+                } else if (e.deltaY < 0 && currentSlideIndex > 0) {
+                    hideSlide(currentSlideIndex);
+                    currentSlideIndex--;
+                }
             }
-        }
-
-
-    });
-    page2.addEventListener("wheel", (e) => {
-        body.classList.remove('stop-scrolling');
-    })
-
+        });
+        page2.addEventListener("wheel", (e) => {
+            body.classList.remove("stop-scrolling");
+        });
+    }
 });

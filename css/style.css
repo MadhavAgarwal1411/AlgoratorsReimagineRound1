@@ -216,6 +216,13 @@ body::-webkit-scrollbar{
     opacity: 0;
     height: 0;
 }
+.page1-0{
+    opacity: 0;
+}
+.page1-0 .slider{
+    height: 0;
+    position: relative;
+}
 @media(max-width: 900px){
     .page1{
         height: 0;
@@ -279,7 +286,6 @@ body::-webkit-scrollbar{
 
 .page2{
     position: relative;
-    background-color: #000;
     overflow: auto;
     width: 100vw;
     overflow-y: hidden;
@@ -290,7 +296,6 @@ body::-webkit-scrollbar{
     width: 90%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-
 }
 .page2 .container .about{
     position: relative;
