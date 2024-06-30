@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
         );
     }
     console.log(page1.offsetHeight);
-    if (page1.offsetHeight) {
+    if (page1.offsetHeight !== 0) {
         page1.addEventListener("wheel", (e) => {
             if (isAnimating) return;
 

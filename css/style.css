@@ -224,6 +224,9 @@ body::-webkit-scrollbar{
     position: relative;
 }
 @media(max-width: 900px){
+    body{
+        overflow: auto!important;
+    }
     .page1{
         height: 0;
     }
