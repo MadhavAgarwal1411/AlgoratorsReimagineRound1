@@ -300,6 +300,7 @@ body::-webkit-scrollbar{
     object-fit: contain;
     -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0002)
 }
+
 .page2 .container .about p span{
     position: relative;
     color: #000;

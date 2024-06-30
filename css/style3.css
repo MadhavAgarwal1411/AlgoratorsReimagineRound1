@@ -59,7 +59,7 @@ body{
     position: absolute;
     width: 220px;
     height: 420px;
-    text-align: justify;
+    text-align: center;
     background: linear-gradient(to top right, green,white,#00662d);
     border-radius: 10px;
     padding: 20px;
