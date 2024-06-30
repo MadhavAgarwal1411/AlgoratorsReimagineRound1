@@ -83,13 +83,13 @@
     <div class="page1">
         <div class="slider">
             <div class="slide" id="slide-1">
-                <img src="./assets/images/slider/img1.webp" alt="">
+                <img src="./assets/images/slider/img1.webp" alt="" loading="eager" fetchpriority="high" class="small-hide" sizes="100vw" is="lazy-image">
             </div>
             <div class="slide" id="slide-2">
-                <img src="./assets/images/slider/img2.webp" alt="">
+                <img src="./assets/images/slider/img2.webp" alt="" loading="eager" fetchpriority="high" class="medium-hide large-up-hide" sizes="100vw" is="lazy-image">
             </div>
             <div class="slide" id="slide-3">
-                <img src="./assets/images/slider/img4.webp" alt="">
+                <img src="./assets/images/slider/img4.webp" alt=""  loading="lazy" fetchpriority="low" class="medium-hide large-up-hide" sizes="100vw" is="lazy-image">
             </div>
 
         </div>
@@ -772,13 +772,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
-        integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="scripts/page1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
         integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="scripts/page1.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+    integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         VanillaTilt.init(document.querySelectorAll(".page3 .box"), {
             max: 25,
