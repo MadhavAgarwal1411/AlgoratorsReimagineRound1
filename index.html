@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/style2.css" />
     <link rel="stylesheet" href="css/style3.css" />
@@ -13,45 +16,28 @@
 <body>
     <div class="page0">
         <header>
-            <ul>
-                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
-                        fill="none">
-                        <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path
-                            d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z"
-                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
-                    </svg></li>
-            </ul>
-            <ul>
-                <li>SHOP</li>
-                <li>SUBSCRIBE & SAVE</li>
-                <li><img class="logo" width="147px" src="assets/images/logo.svg" alt=""></li>
-                <li>ODOP</li>
-                <li>ABOUT US</li>
-            </ul>
-            <ul>
-                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
-                        fill="none">
-                        <path
-                            d="M6.57757 15.4816C5.1628 16.324 1.45336 18.0441 3.71266 20.1966C4.81631 21.248 6.04549 22 7.59087 22H16.4091C17.9545 22 19.1837 21.248 20.2873 20.1966C22.5466 18.0441 18.8372 16.324 17.4224 15.4816C14.1048 13.5061 9.89519 13.5061 6.57757 15.4816Z"
-                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M16.5 6.5C16.5 8.98528 14.4853 11 12 11C9.51472 11 7.5 8.98528 7.5 6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5Z"
-                            stroke="currentColor" stroke-width="1.5" />
-                    </svg></li>
-                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
-                        fill="none">
-                        <path
-                            d="M3.06164 14.4413L3.42688 12.2985C3.85856 9.76583 4.0744 8.49951 4.92914 7.74975C5.78389 7 7.01171 7 9.46734 7H14.5327C16.9883 7 18.2161 7 19.0709 7.74975C19.9256 8.49951 20.1414 9.76583 20.5731 12.2985L20.9384 14.4413C21.5357 17.946 21.8344 19.6983 20.9147 20.8491C19.995 22 18.2959 22 14.8979 22H9.1021C5.70406 22 4.00504 22 3.08533 20.8491C2.16562 19.6983 2.4643 17.946 3.06164 14.4413Z"
-                            stroke="currentColor" stroke-width="1.5" />
-                        <path
-                            d="M7.5 9L7.71501 5.98983C7.87559 3.74176 9.7462 2 12 2C14.2538 2 16.1244 3.74176 16.285 5.98983L16.5 9"
-                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                    </svg></li>
-            </ul>
+            <div class="navbar">
+                <div class="logo"><a href="#"><img width="120px" src="assets/images/logo.svg" alt=""></a></div>
+                <ul class="links">
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">SUBSCRIBE & SAVE</a></li>
+                    <li><a href="#">ODOP</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                </ul>
+                <a href="" class="action-btn">Login/SignUp</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="dropmenu">
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">SUBSCRIBE & SAVE</a></li>
+                <li><a href="#">ODOP</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#" class="action-btn">Login/SignUp</a></li>
+            </div>
         </header>
-    </div>
+    </div>   
     <!-- <div class="page1">
             <input id="slide1" type="radio" name="group" checked />
             <input id="slide2" type="radio" name="group" />
@@ -158,6 +144,7 @@
         </div>
     </div>
     <div class="page3">
+        <h1>Shop By Category</h1>
         <div class="container">
             <div class="box" id="box1">
                 <h2 class="name">BEST SELLERS</h2>
@@ -824,6 +811,19 @@
             glare: true,
             "max-glare": 0.5,
         });
+    </script>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDown = document.querySelector('.dropmenu')
+
+        toggleBtn.onclick = function () {
+            dropDown.classList.toggle('open')
+            const isOpen = dropDown.classList.contains('open')
+            toggleBtnIcon.classList = isOpen
+                ? "fa-solid fa-xmark"
+                : "fa-solid fa-bars"
+        }
     </script>
     <script src="scripts/script.js"></script>
     <script src="scripts/script1.js"></script>
