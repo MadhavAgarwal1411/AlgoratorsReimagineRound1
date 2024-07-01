@@ -444,7 +444,6 @@ body::-webkit-scrollbar{
     overflow: auto;
     width: 100vw;
     overflow-y: hidden;
-
 }
 .page2 .container{
     height: 100%;
@@ -511,6 +510,10 @@ body::-webkit-scrollbar{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+    background-color: rgba(0, 0, 0, 0.801);
+    border-radius: 20px;
     transform: rotateX(0) !important;
 }
 
@@ -607,8 +610,7 @@ body::-webkit-scrollbar{
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    width: 90%;
-    margin-left: 5%;
+    width: 95%;
     transform-style: preserve-3d;
     /* margin-bottom: 10%; */
 }
