@@ -149,17 +149,20 @@
 }
 
 .page5 .list .item .intro .title {
-    font-size: 2em;
+    font-size: 12px;
+    font-weight: 300;
     line-height: 0.8em;
 }
 
 .page5 .list .item .intro .topic {
-    font-size: 4em;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 0.8;
+    margin: 15px 0;
 }
 
 .page5 .list .item .intro .des {
-    font-size: small;
+    font-size: 10px;
 }
 
 .page5 .list .item .intro .seeMore {

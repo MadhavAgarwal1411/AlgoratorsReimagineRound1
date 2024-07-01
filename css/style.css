@@ -40,19 +40,39 @@ body::-webkit-scrollbar{
 
 /* loading-page */
 
-/* .loading-page{
+
+.loading-page {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 99999999;
-    height: 100%;
-    width: 100%;
-}
-
-.loading-page svg{
-    height: 100px;
-} */
-
+    background-color: black;
+    z-index: 9999;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #svg {
+    height: 250px;
+    width: 250px;
+    stroke: white;
+    fill-opacity: 0;
+    stroke-width: 3px;
+    stroke-dasharray: 4500;
+    animation: draw 35s ease;
+  }
+  
+  @keyframes draw {
+    0% {
+      stroke-dashoffset: 4500;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
 
 
 /* page0 */
@@ -321,13 +341,10 @@ body::-webkit-scrollbar{
     top: 0;
 }
 
-@media(max-width: 900px){
 
-    .slide-name{
-        left: 50%;
-    }
-    .slide-year{
-        right: 10%;
+@media(max-width: 3900px){
+    .page2{
+        padding-top: 10vh;
     }
 }
 
@@ -413,7 +430,6 @@ body::-webkit-scrollbar{
         background-color: white;
         color: black;
     }
-
 }
 /* page2 */
 
@@ -741,6 +757,7 @@ body::-webkit-scrollbar{
 
 .page6{
     width: 100vw;
+    margin-top: 10vh;
 }
 .page6 .container{
     /* height: 100vh; */
@@ -962,6 +979,9 @@ body::-webkit-scrollbar{
     }
     .page9 .container .left{
         position: relative;
+    }
+    .page9 h5,h2{
+        margin-left: 5px;
     }
 }
 
@@ -1189,7 +1209,7 @@ body::-webkit-scrollbar{
 /* side bar */
 .side-container{
     position: fixed;
-    left: -120px;
+    left: -130px;
     top: 50%;
     display: flex;
     align-items: center;

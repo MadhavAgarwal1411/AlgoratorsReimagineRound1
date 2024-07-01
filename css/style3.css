@@ -51,8 +51,8 @@
 }
 .testimonials .item{
     position: absolute;
-    width: 220px;
-    height: 420px;
+    width: 250px;
+    height: 470px;
     text-align: center;
     background: linear-gradient(to top right, green,white,#00662d);
     border-radius: 10px;
@@ -63,6 +63,7 @@
 }
 
 .testimonials .arrows{
+    z-index: 10;
     position: absolute;
     bottom: 210px;
     width: 1140px;
