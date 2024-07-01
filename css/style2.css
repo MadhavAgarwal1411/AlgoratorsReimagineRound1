@@ -67,10 +67,6 @@
     transform: translateY(-50%);
 }
 
-.page5 .list .item .detail {
-    opacity: 0;
-    pointer-events: none;
-}
 
 .page5 .list .item .intro {
     position: absolute;
@@ -150,17 +146,6 @@
     font-size: large;
     font-weight: bold;
     border: 1px solid #555;
-}
-
-.page5 .arrows #back {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 500;
-    border: none;
-    border-bottom: 1px solid #555;
-    letter-spacing: 3px;
-    background-color: transparent;
-    opacity: 0;
-    pointer-events: none;
 }
 
 .page5 .list .item .intro .title {

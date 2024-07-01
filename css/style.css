@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 html, body{
     width: 100%;
@@ -34,6 +37,24 @@ body::-webkit-scrollbar{
     align-items: center;
     padding: 0 5vw;
 }
+
+/* loading-page */
+
+/* .loading-page{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999999;
+    height: 100%;
+    width: 100%;
+}
+
+.loading-page svg{
+    height: 100px;
+} */
+
+
+
 /* page0 */
 
 
@@ -686,6 +707,7 @@ body::-webkit-scrollbar{
     border-radius: 20px;
 }
 .page4 .container .section{
+    padding: 10% 10% 0 10%;
     position:relative;
     display: flex;
     justify-content: center;
@@ -738,13 +760,12 @@ body::-webkit-scrollbar{
 }
 .page6 .container .section{
     position:relative;
-    height: 100vh;
     display: flex;
+    padding: 10% 10% 0 10%;
     justify-content: center;
     align-items: center;
 }
 .page6 .container .section .contain{
-    width: 50%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -1159,10 +1180,10 @@ body::-webkit-scrollbar{
 }
 
 .btn:hover span.hover{
-    transform: translateX(-35px);
+    transform: translateY(-35px);
 }
 .btn span.hover{
-    transform: translateX(-35px);
+    transform: translateY(-35px);
 }
 
 /* side bar */
