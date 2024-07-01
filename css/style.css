@@ -5,6 +5,7 @@
 }
 html, body{
     width: 100%;
+    height: 100%;
 }
 .stop-scrolling{
     overflow: hidden;
@@ -39,8 +40,9 @@ body::-webkit-scrollbar{
 .page0{
     z-index: 1000;
     background-color: #000;
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
 }
 
 .page0 header li{
@@ -65,7 +67,7 @@ body::-webkit-scrollbar{
 .page0 header .navbar{
     width: 100%;
     height: 60px;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -79,9 +81,9 @@ body::-webkit-scrollbar{
 
 .page0 header .navbar .links{
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 2rem;
+    width: 60%;
+    justify-content: space-around;
 }
 
 .page0 header .navbar .toggle_btn{
@@ -118,15 +120,15 @@ body::-webkit-scrollbar{
     top: 60px;
     height: 0;
     width: 300px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #002d1491;
     backdrop-filter: blur(15px);
-    border-radius: 10px;
+    border-radius: 10px 10px 10px 50%;
     overflow: hidden;
     transition: height 0.2s ease;
 }
 
 .page0 header .dropmenu.open{
-    height: 240px;
+    height: 90vh;
 }
 
 .page0 header .dropmenu li{
@@ -135,6 +137,7 @@ body::-webkit-scrollbar{
     justify-content: center;
     align-items: center;
 }
+
 .page0 header .dropmenu .action-btn{
     width: 100%;
     display: flex;
@@ -406,6 +409,23 @@ body::-webkit-scrollbar{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
+@media(max-width:400px){
+    .page2 .container{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    }
+    
+}
+@media(max-width:500px){
+    .page4 .container{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    }
+    .page6 .container{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    }
+    .page6 .container .section .contain button {
+        padding: 0.7rem 1.5rem !important;
+    }
+}
 .page2 .container .about{
     position: relative;
     height: 80vh;
@@ -545,7 +565,7 @@ body::-webkit-scrollbar{
     width: 90%;
     margin-inline: auto;
     transform-style: preserve-3d;
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
 }
 .page3 .container .box{
     position: relative;
@@ -572,6 +592,13 @@ body::-webkit-scrollbar{
     top: 40px;
     transform: translate3d(0%, 0%, 75px);
 
+}
+@media(max-width:786px){
+    .page3 .container .box .name{
+        opacity: 1;
+        top: 40px;
+        transform: translate3d(0%, 0%, 75px);
+    }
 }
 .page3 .container .box .buy{
     position: absolute;
@@ -631,13 +658,14 @@ body::-webkit-scrollbar{
 
 .page4 {
     width: 100vw;
+    margin:10vh 0;
 }
 .page4 .container{
     height: 100%;
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
 }
 .page4 .container .image{
     height: 100%;
@@ -654,16 +682,18 @@ body::-webkit-scrollbar{
     left: 0;
     width: 90%;
     height: 100%;
+    margin-left: 5%;
+    border-radius: 20px;
 }
 .page4 .container .section{
     position:relative;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .page4 .container .section .contain{
-    width: 50%;
+    width: 90%;
+    margin-left: 5%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -694,14 +724,16 @@ body::-webkit-scrollbar{
     /* height: 100vh; */
     width: 100vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 .page6 .container .image{
     height: 100vh;
 }
 .page6 .container .image img{
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
     height: 100%;
+    border-radius: 20px;
     object-fit: inherit;
 }
 .page6 .container .section{
@@ -1127,10 +1159,10 @@ body::-webkit-scrollbar{
 }
 
 .btn:hover span.hover{
-    transform: translateY(-35px);
+    transform: translateX(-35px);
 }
 .btn span.hover{
-    transform: translateY(-35px);
+    transform: translateX(-35px);
 }
 
 /* side bar */
