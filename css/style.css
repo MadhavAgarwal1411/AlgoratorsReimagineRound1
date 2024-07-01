@@ -369,6 +369,12 @@ body::-webkit-scrollbar{
     width: 0;
 }
 @media(max-width: 900px){
+    .side-container{
+        display: none;
+    }
+    .side-container svg{
+        display: none;
+    }
     body{
         overflow: auto!important;
     }
@@ -394,7 +400,7 @@ body::-webkit-scrollbar{
     .page1-0 .slider .list .item img{
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: inherit;
     }
 
     .page1-0 .slider .list .item.active{
@@ -443,6 +449,7 @@ body::-webkit-scrollbar{
 .page2 .container{
     height: 100%;
     width: 90%;
+    margin-left: 5%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
@@ -465,16 +472,16 @@ body::-webkit-scrollbar{
 }
 .page2 .container .about{
     position: relative;
-    height: 80vh;
+    /* height: 80vh; */
     /* width: 50%; */
-    background-color: #fef9f9;
+    /* background-color: #fef9f9; */
     display: flex;
     justify-content: center;
     align-items:flex-start;
     flex-direction: column;
     margin-inline: auto;
-    padding-left: 5%;
-    padding-right: 10%;
+    /* padding-left: 5%; */
+    /* padding-right: 10%; */
 }
 
 .page2 .container .about h3{
@@ -499,7 +506,8 @@ body::-webkit-scrollbar{
 }
 .page2 .container .box{
     /* width: 50%; */
-    height: 80vh;
+    /* height: 80vh; */
+    margin-top: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -600,7 +608,7 @@ body::-webkit-scrollbar{
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     width: 90%;
-    margin-inline: auto;
+    margin-left: 5%;
     transform-style: preserve-3d;
     /* margin-bottom: 10%; */
 }
@@ -765,9 +773,7 @@ body::-webkit-scrollbar{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
-.page6 .container .image{
-    height: 100vh;
-}
+
 .page6 .container .image img{
     width: 90%;
     margin-left: 5%;
