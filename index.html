@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,6 +14,8 @@
 </head>
 
 <body>
+    <div id="main" data-scroll-container>
+
     <!-- <div class="loading-page">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.37 77.87">
             <defs>
@@ -113,7 +116,9 @@
     <div class="page0">
         <header>
             <div class="navbar">
-                <div class="logo"><a href="#"><img width="120px" src="assets/images/logo.svg" alt=""></a></div>
+                <div class="logo">
+                    <a href="#"><img width="120px" src="assets/images/logo.svg" alt="" /></a>
+                </div>
                 <ul class="links">
                     <li><a href="#">SHOP</a></li>
                     <li><a href="#">SUBSCRIBE & SAVE</a></li>
@@ -165,13 +170,13 @@
         <div class="slider">
             <div class="list">
                 <div class="item active">
-                    <img src="assets/images/slider/img3.webp" alt="">
+                    <img src="assets/images/slider/img3.webp" alt="" />
                 </div>
                 <div class="item">
-                    <img src="assets/images/slider/img5.webp" alt="">
+                    <img src="assets/images/slider/img5.webp" alt="" />
                 </div>
                 <div class="item">
-                    <img src="assets/images/slider/img6.jpg" alt="">
+                    <img src="assets/images/slider/img6.jpg" alt="" />
                 </div>
             </div>
             <div class="arrows">
@@ -185,27 +190,25 @@
         <div class="slider">
             <div class="slide" id="slide-1">
                 <img src="./assets/images/slider/img1.webp" alt="" loading="eager" fetchpriority="high"
-                    class="small-hide" sizes="100vw" is="lazy-image">
+                    class="small-hide" sizes="100vw" is="lazy-image" />
             </div>
             <div class="slide" id="slide-2">
                 <img src="./assets/images/slider/img2.webp" alt="" loading="eager" fetchpriority="high"
-                    class="medium-hide large-up-hide" sizes="100vw" is="lazy-image">
+                    class="medium-hide large-up-hide" sizes="100vw" is="lazy-image" />
             </div>
             <div class="slide" id="slide-3">
                 <img src="./assets/images/slider/img4.webp" alt="" loading="lazy" fetchpriority="low"
-                    class="medium-hide large-up-hide" sizes="100vw" is="lazy-image">
+                    class="medium-hide large-up-hide" sizes="100vw" is="lazy-image" />
             </div>
-
         </div>
-        <!-- <div style="height: 400vh"></div> -->
+        <!-- < <div style="height: 400vh"></div> -->
+        -
     </div>
 
     <div class="page2">
         <div class="container">
             <div class="about">
-                <h3>
-                    WELCOME TO FIRST BUD ORGANICS
-                </h3>
+                <h3>WELCOME TO FIRST BUD ORGANICS</h3>
                 <h1 class="text-scroll-animation">
                     From the farm to your table
                 </h1>
@@ -219,7 +222,7 @@
                     of purity and excellence, and join us in setting new
                     benchmarks for a healthier tomorrow
                 </p>
-                <a href="#"><button class="btn">ABOUT US</button></a> 
+                <a href="#"><button class="btn">ABOUT US</button></a>
             </div>
             <div class="box">
                 <div class="images">
@@ -239,192 +242,200 @@
             </div>
         </div>
     </div>
-    <div class="page3">
-        <h1>Shop By Category</h1>
-        <div class="container">
-            <div class="box" id="box1">
-                <h2 class="name">BEST SELLERS</h2>
-                <img src="assets/images/page3 grid/img1.png" alt="" class="product" />
-            </div>
-            <div class="box" id="box2">
-                <h2 class="name">HERBAL TEA</h2>
-                <img src="assets/images/page3 grid/img2.png" alt="" class="product" />
-            </div>
-            <div class="box" id="box3">
-                <h2 class="name">HOMEMADE PICKLES</h2>
-                <img src="assets/images/page3 grid/img3.png" alt="" class="product" />
-            </div>
-            <div class="box" id="box4">
-                <h2 class="name">SUGAR SUBSTITUTE</h2>
-                <img src="assets/images/page3 grid/img7.png" alt="" class="product" />
-            </div>
-            <div class="box" id="box5">
-                <h2 class="name">SPICES</h2>
-                <img src="assets/images/page3 grid/img6.png" alt="" class="product" />
-            </div>
-            <div class="box" id="box6">
-                <h2 class="name">IMUNITY DROPS</h2>
-                <img src="assets/images/page3 grid/img5.png" alt="" class="product" />
-            </div>
-            <div class="box" id="box7">
-                <h2 class="name">HONEY</h2>
-                <img src="assets/images/page3 grid/img4.png" alt="" class="product" />
-            </div>
-            <div class="box" id="box8">
-                <h2 class="name">SHOP ALL</h2>
-                <img src="assets/images/page3 grid/img8.png" alt="" class="product" />
+        <div class="page3">
+            <h1>Shop By Category</h1>
+            <div class="container">
+                <div class="box" id="box1">
+                    <h2 class="name">BEST SELLERS</h2>
+                    <img src="assets/images/page3 grid/img1.png" alt="" class="product" />
+                </div>
+                <div class="box" id="box2">
+                    <h2 class="name">HERBAL TEA</h2>
+                    <img src="assets/images/page3 grid/img2.png" alt="" class="product" />
+                </div>
+                <div class="box" id="box3">
+                    <h2 class="name">HOMEMADE PICKLES</h2>
+                    <img src="assets/images/page3 grid/img3.png" alt="" class="product" />
+                </div>
+                <div class="box" id="box4">
+                    <h2 class="name">SUGAR SUBSTITUTE</h2>
+                    <img src="assets/images/page3 grid/img7.png" alt="" class="product" />
+                </div>
+                <div class="box" id="box5">
+                    <h2 class="name">SPICES</h2>
+                    <img src="assets/images/page3 grid/img6.png" alt="" class="product" />
+                </div>
+                <div class="box" id="box6">
+                    <h2 class="name">IMUNITY DROPS</h2>
+                    <img src="assets/images/page3 grid/img5.png" alt="" class="product" />
+                </div>
+                <div class="box" id="box7">
+                    <h2 class="name">HONEY</h2>
+                    <img src="assets/images/page3 grid/img4.png" alt="" class="product" />
+                </div>
+                <div class="box" id="box8">
+                    <h2 class="name">SHOP ALL</h2>
+                    <img src="assets/images/page3 grid/img8.png" alt="" class="product" />
+                </div>
             </div>
         </div>
-    </div>
-    <!-- <div class="horizontal-scroll" data-0="transform: translateX(0%);" data-1000="transform: translateX(-100%)"> -->
+        <!-- <div class="horizontal-scroll" data-0="transform: translateX(0%);" data-1000="transform: translateX(-100%)"> -->
 
-    <div class="page4">
-        <div class="container">
-            <div class="image">
-                <img src="assets/images/image1.png" alt="" />
-            </div>
-            <div class="section">
-                <div class="contain">
-                    <h1>Nature's Best, Sustainably Grown</h1>
-                    <p>
-                        Our products are a journey back to the roots of what
-                        eating should always be about: purity and
-                        authenticity. From the lush and vibrant landscapes,
-                        our products are enriching and boast promising
-                        flavours that are true and untainted.
-                    </p>
-                    <a href="#"><button class="btn">EXPLORE</button></a>
+        <div class="page4">
+            <div class="container">
+                <div class="image">
+                    <img src="assets/images/image1.png" alt="" />
+                </div>
+                <div class="section">
+                    <div class="contain">
+                        <h1>Nature's Best, Sustainably Grown</h1>
+                        <p>
+                            Our products are a journey back to the roots of
+                            what eating should always be about: purity and
+                            authenticity. From the lush and vibrant
+                            landscapes, our products are enriching and boast
+                            promising flavours that are true and untainted.
+                        </p>
+                        <a href="#"><button class="btn">EXPLORE</button></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="page5">
-        <h1 class="page-heading">Our Bestsellers</h1>
-        <div class="list">
-            <div class="item">
-                <img src="assets/images/best sellers/1.png" alt="" />
-                <div class="intro">
-                    <div class="title">Nature's Potent Immune Booster</div>
-                    <div class="topic">Lakadong Turmeric Powder</div>
-                    <div class="des">
-                        Experience the essence of purity and tradition
-                        with First Bud Organics
-                        Where the passion of our farmers meets the center of
-                        your kitchen. Our organic treasures offer a healthy,
-                        chemical-free diet for your family with every grain,
-                        leaf, and spice embodying the purest form of
-                        nature's goodness. By choosing First Bud Organics,
-                        you're joining a movement that supports
-                        sustainability and health. Harvested from the
-                        village of Lakadong, it's a rare gem cultivated with
-                        age-old traditional methods
+        <div class="page5">
+            <h1 class="page-heading">Our Bestsellers</h1>
+            <div class="list">
+                <div class="item">
+                    <img src="assets/images/best sellers/1.png" alt="" />
+                    <div class="intro">
+                        <div class="title">
+                            Nature's Potent Immune Booster
+                        </div>
+                        <div class="topic">Lakadong Turmeric Powder</div>
+                        <div class="des">
+                            Experience the essence of purity and tradition
+                            with First Bud Organics Where the passion of our
+                            farmers meets the center of your kitchen. Our
+                            organic treasures offer a healthy, chemical-free
+                            diet for your family with every grain, leaf, and
+                            spice embodying the purest form of nature's
+                            goodness. By choosing First Bud Organics, you're
+                            joining a movement that supports sustainability
+                            and health. Harvested from the village of
+                            Lakadong, it's a rare gem cultivated with
+                            age-old traditional methods
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="assets/images/best sellers/2.png" alt="" />
+                    <div class="intro">
+                        <div class="title">Best Organic Pickle</div>
+                        <div class="topic">Spicy Lemon Pickle</div>
+                        <div class="des">
+                            Handcrafted from premium-quality lemons infused
+                            with a blend of aromatic spices. Each lemon
+                            slice is meticulously seasoned to ensure a
+                            perfect balance of tanginess and heat. Bursting
+                            with vibrant flavors, including zesty citrus,
+                            fiery chili, and aromatic spices Preserved to
+                            perfection to maintain freshness and enhance
+                            flavor over time. Perfect accompaniment to rice
+                            dishes, grilled meats, or as a zesty topping for
+                            salads
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="assets/images/best sellers/3.png" alt="" />
+                    <div class="intro">
+                        <div class="title">
+                            Natural Sugar Free Zero Calorie
+                        </div>
+                        <div class="topic">Stevia Drops Liquid</div>
+                        <div class="des">
+                            Experience the essence of purity and tradition
+                            with First Bud Organics Where the passion of our
+                            farmers meets the center of your kitchen. Our
+                            organic treasures offer a healthy, chemical-free
+                            diet for your family with every grain, leaf, and
+                            spice embodying the purest form of nature's
+                            goodness. By choosing First Bud Organics, you're
+                            joining a movement that supports sustainability
+                            and health.
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="assets/images/best sellers/4.png" alt="" />
+                    <div class="intro">
+                        <div class="title">
+                            Pure Honey, Pure Taste: Experience the natural
+                            goodness
+                        </div>
+                        <div class="topic">Raw Comb Honey</div>
+                        <div class="des">
+                            Raw comb honey is a pure and unprocessed form of
+                            honey that includes the edible beeswax comb.
+                            It's harvested directly from the hive,
+                            showcasing the natural hexagonal cells created
+                            by bees to store honey. This type of honey is
+                            prized for its delicate flavor and texture,
+                            often enjoyed as a gourmet treat. It retains all
+                            the natural enzymes, pollen, and antioxidants
+                            found in honey, making it a sought-after choice
+                            for those who appreciate its unaltered sweetness
+                            and health benefits.
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="assets/images/best sellers/5.png" alt="" />
+                    <div class="intro">
+                        <div class="title">Essence of Kashmir</div>
+                        <div class="topic">Kashmiri Mogra Saffron</div>
+                        <div class="des">
+                            Experience the essence of purity and tradition
+                            with First Bud Organics Where the passion of our
+                            farmers meets the center of your kitchen. Our
+                            organic treasures offer a healthy, chemical-free
+                            diet for your family with every grain, leaf, and
+                            spice embodying the purest form of nature's
+                            goodness. By choosing First Bud Organics, you're
+                            joining a movement that supports sustainability
+                            and health.
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="assets/images/best sellers/6.png" alt="" />
+                    <div class="intro">
+                        <div class="title">
+                            Revitalize with Pure Himalayan Tulsi Bliss
+                        </div>
+                        <div class="topic">Tulsi Green Tea</div>
+                        <div class="des">
+                            Experience the essence of purity and tradition
+                            with First Bud Organics Where the passion of our
+                            farmers meets the center of your kitchen. Our
+                            organic treasures offer a healthy, chemical-free
+                            diet for your family with every grain, leaf, and
+                            spice embodying the purest form of nature's
+                            goodness. By choosing First Bud Organics, you're
+                            joining a movement that supports sustainability
+                            and health.
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <img src="assets/images/best sellers/2.png" alt="" />
-                <div class="intro">
-                    <div class="title">Best Organic Pickle</div>
-                    <div class="topic">Spicy Lemon Pickle</div>
-                    <div class="des">
-                        Handcrafted from premium-quality lemons infused with
-                        a blend of aromatic spices. Each lemon slice is
-                        meticulously seasoned to ensure a perfect balance of
-                        tanginess and heat. Bursting with vibrant flavors,
-                        including zesty citrus, fiery chili, and aromatic
-                        spices Preserved to perfection to maintain freshness
-                        and enhance flavor over time. Perfect accompaniment
-                        to rice dishes, grilled meats, or as a zesty topping
-                        for salads
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="assets/images/best sellers/3.png" alt="" />
-                <div class="intro">
-                    <div class="title">Natural Sugar Free Zero Calorie</div>
-                    <div class="topic">Stevia Drops Liquid</div>
-                    <div class="des">
-                        Experience the essence of purity and tradition with
-                        First Bud Organics Where the passion of our farmers
-                        meets the center of your kitchen. Our organic
-                        treasures offer a healthy, chemical-free diet for
-                        your family with every grain, leaf, and spice
-                        embodying the purest form of nature's goodness. By
-                        choosing First Bud Organics, you're joining a
-                        movement that supports sustainability and health.
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="assets/images/best sellers/4.png" alt="" />
-                <div class="intro">
-                    <div class="title">
-                        Pure Honey, Pure Taste: Experience the natural
-                        goodness
-                    </div>
-                    <div class="topic">Raw Comb Honey</div>
-                    <div class="des">
-                        Raw comb honey is a pure and unprocessed form of
-                        honey that includes the edible beeswax comb. It's
-                        harvested directly from the hive, showcasing the
-                        natural hexagonal cells created by bees to store
-                        honey. This type of honey is prized for its delicate
-                        flavor and texture, often enjoyed as a gourmet
-                        treat. It retains all the natural enzymes, pollen,
-                        and antioxidants found in honey, making it a
-                        sought-after choice for those who appreciate its
-                        unaltered sweetness and health benefits.
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="assets/images/best sellers/5.png" alt="" />
-                <div class="intro">
-                    <div class="title">Essence of Kashmir</div>
-                    <div class="topic">Kashmiri Mogra Saffron</div>
-                    <div class="des">
-                        Experience the essence of purity and tradition with
-                        First Bud Organics Where the passion of our farmers
-                        meets the center of your kitchen. Our organic
-                        treasures offer a healthy, chemical-free diet for
-                        your family with every grain, leaf, and spice
-                        embodying the purest form of nature's goodness. By
-                        choosing First Bud Organics, you're joining a
-                        movement that supports sustainability and health.
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="assets/images/best sellers/6.png" alt="" />
-                <div class="intro">
-                    <div class="title">
-                        Revitalize with Pure Himalayan Tulsi Bliss
-                    </div>
-                    <div class="topic">Tulsi Green Tea</div>
-                    <div class="des">
-                        Experience the essence of purity and tradition with
-                        First Bud Organics Where the passion of our farmers
-                        meets the center of your kitchen. Our organic
-                        treasures offer a healthy, chemical-free diet for
-                        your family with every grain, leaf, and spice
-                        embodying the purest form of nature's goodness. By
-                        choosing First Bud Organics, you're joining a
-                        movement that supports sustainability and health.
-                    </div>
-                </div>
+            <div class="arrows">
+                <button id="prev">&lt;</button>
+                <button id="next">&gt;</button>
             </div>
         </div>
-        <div class="arrows">
-            <button id="prev">
-                &lt; </button>
-            <button id="next">&gt; </button>
-        </div>
-    </div>
-    <!-- </div> -->
+        <!-- </div> -->
 
-    <!-- <div class="page6">
+        <!-- <div class="page6">
         <div class="container">
             <h1>How FirstBud Is Changing The Way You Eat</h1>
             <p>Bringing you products right from the lush landscapes, our organic treasures offer a healthy and chemical-free diet for your family. By choosing First Bud Organics, you're joining a movement that supports sustainability and health.</p>
@@ -432,410 +443,474 @@
         </div>
     </div> -->
 
-    <div class="page6">
-        <div class="container">
-            <div class="image">
-                <img src="assets/images/image3.png" alt="" />
-            </div>
-            <div class="section">
-                <div class="contain">
-                    <h1>Welcome to the First Bud Organics family!</h1>
-                    <p>
-                        Join Us on a Flavorful, Health-Conscious, and
-                        Eco-Friendly Journey
-                    </p>
-                    <a href="#"><button class="btn">SHOP NOW</button></a>   
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="page7">
-        <div class="testimonials">
-            <h1>Testimonials</h1>
-            <div class="slider">
-                <div class="item">
-                    <img src="assets/images/testimonials/1.jpg" alt="">
-                    <h2>Pranali Rane</h2>
-                    <p>Love the flavor of Honey 100% organic. The best product quality with reasonable price. mostly
-                        recommended to Buy firstbuds products.</p>
-                </div>
-                <div class="item">
-                    <img src="assets/images/testimonials/2.jpg" alt="">
-                    <h2>Author</h2>
-                    <p>Natural Pahadi raw honey is totally natural and is of the best quality. I tried it and I’m very
-                        satisfied with the taste. Their products are value for money and worth buying. I’m a regular
-                        customer of first bud organics. Must try.</p>
-                </div>
-                <div class="item">
-                    <img src="assets/images/testimonials/3.jpg" alt="">
-                    <h2>Suvendu Biswas</h2>
-                    <p>I love their Tulsi Green Tea product, Its really awesome product and I will suggest to try once.
-                        It will definitely bring smile on your face.</p>
-                </div>
-                <div class="item">
-                    <img src="assets/images/testimonials/4.jpg" alt="">
-                    <h2>Sushmita Bhati</h2>
-                    <p>They have the best organics products. Their services are very good. And I liked the slim bud tea
-                        which I am using for 15 days and I quite liked it.</p>
-                </div>
-                <div class="item">
-                    <img src="assets/images/testimonials/5.jpg" alt="">
-                    <h2>Mansi Gupta</h2>
-                    <p>I have used it’s Chai Masala, and I must say, it’s one of the best Chai Masala you will ever buy.
-                        Amazing taste and will definitely make your morning different from usual mornings. Using it
-                        since a week and to be continued 😍😍.</p>
-                </div>
-                <div class="item">
-                    <img src="assets/images/testimonials/6.jpg" alt="">
-                    <h2>Shahbaz Lakdawala</h2>
-                    <p>Firstbud organic such an amazing brand. I like the quality according to price point. Its totally
-                        worth the money, also i love their honey</p>
-                </div>
-                <div class="item">
-                    <img src="assets/images/testimonials/7.jpg" alt="">
-                    <h2>Shradhya Chakraborty</h2>
-                    <p>I have tried many different brands of green tea, but this Tulsi Green Tea has been my favorite
-                        since
-                        I came across it three years back. The taste is so much better and so much more natural.</p>
-                </div>
-            </div>
-            <div class="arrows">
-                <button id="prevtest">&lt</button>
-                <button id="nexttest">&gt</button>
-            </div>
-        </div>
-    </div>
-    <div class="iframe-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/F4ps5Nnl6VE?si=gU0zyVVmA-2_fdEg"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    <div class="page8">
-        <div class="container">
-            <div class="availableoncontainer">
-                <div class="heading">
-                    <h2>Also Available on</h2>
-                </div>
-                <div class="websites">
-                    <a target="_blank"
-                        href="https://www.amazon.in/s?k=first+bud&adgrpid=1319415559376326&hvadid=82463731607576&hvbmt=bp&hvdev=c&hvlocphy=156162&hvnetw=o&hvqmt=p&hvtargid=kwd-82464351527190%3Aloc-90&hydadcr=10013_1893351&msclkid=d800c5bc387611d155c7a3c647ad85da&tag=msndeskstdin-21&ref=pd_sl_8pantsh0jq_p">
-                        <img src="assets/images/page8/amazon.jpg" alt="" />
-                    </a>
-                    <a target="_blank"
-                        href="https://www.flipkart.com/search?q=First+Bud+Organics+&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&as-pos=1&as-type=HISTORY">
-                        <img src="assets/images/page8/flipkart.jpg" alt="" />
-                    </a>
-                </div>
-            </div>
-            <div class="certificationbycontainer">
-                <div class="heading">
-                    <h2>Certification by</h2>
-                </div>
-                <div class="organisations">
-                    <a href="#">
-                        <img src="assets/images/page8/fssai.jpg" alt="" />
-                    </a>
-                    <a href="#">
-                        <img src="assets/images/page8/usfooddrug.jpg" alt="" />
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="page9">
-        <div class="container">
-            <div class="left">
-                <img height="566px" src="assets/images/basket/5.jpg" alt="">
-            </div>
-            <div class="right">
-                <h5>BUNDLE & SAVE</h5>
-                <h2>Build Your Own Basket</h2>
-                <div class="section">
-                    <div class="img">
-                        <img src="assets/images/basket/1.jpg" alt="">
-                    </div>
-                    <div class="des">
-                        <div class="content">
-                            <div class="name">Pahadi Honey</div>
-                            <div class="buttons">
-                                <div class="quantity">
-                                    <select>
-                                        <option value="1">500gm</option>
-                                    </select>
-                                </div>
-                                <div class="add-to-cart">Add to Cart &rarr; </div>
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="new">Rs.499.00</span>
-                            <span class="old">Rs. 590.00</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="section">
-                    <div class="img">
-                        <img src="assets/images/basket/2.jpg" alt="">
-                    </div>
-                    <div class="des">
-                        <div class="content">
-                            <div class="name">Lakadong Turmeric Powder</div>
-                            <div class="buttons">
-                                <div class="quantity">
-                                    <select>
-                                        <option value="1">250 gm</option>
-                                    </select>
-                                </div>
-                                <div class="add-to-cart">Add to Cart &rarr; </div>
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="new">Rs.299.00</span>
-                            <span class="old">Rs. 365.00</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="section">
-                    <div class="img">
-                        <img src="assets/images/basket/3.jpg" alt="">
-                    </div>
-                    <div class="des">
-                        <div class="content">
-                            <div class="name">Home Made Mango Pickle</div>
-                            <div class="buttons">
-                                <div class="quantity">
-                                    <select>
-                                        <option value="1">500 gm / single</option>
-                                        <option value="2">500 gm / pack of 2</option>
-                                    </select>
-                                </div>
-                                <div class="add-to-cart">Add to Cart &rarr; </div>
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="new">Rs.449.00</span>
-                            <span class="old">Rs. 499.00</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="section">
-                    <div class="img">
-                        <img src="assets/images/basket/4.jpg" alt="">
-                    </div>
-                    <div class="des">
-                        <div class="content">
-                            <div class="name">Detox Tea Combo</div>
-                            <div class="buttons">
-                                <div class="quantity">
-                                    <select>
-                                        <option value="1">100 gm | 50 Cup</option>
-                                    </select>
-                                </div>
-                                <div class="add-to-cart">Add to Cart &rarr; </div>
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="new">Rs.499.00</span>
-                            <span class="old">Rs. 640.00</span>
-                        </div>
-                    </div>
-                </div>
-                <a href="#"><button class="add-set btn">ADD SET TO CART</button></a> 
-            </div>
-        </div>
-    </div>
-
-    <div class="page9-1">
-        <div class="flex-Container">
-            <div class="guarantee">
-                <div class="svg-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-guarantee" aria-hidden="true"
-                        focusable="false" fill="none" viewBox="0 0 640 512">
-                        <path
-                            d="M272 192C280.8 192 288 184.8 288 176C288 167.2 280.8 160 272 160h-224C39.16 160 32 167.2 32 176C32 184.8 39.16 192 47.1 192H272zM624 384H608V247.7c0-19.08-6.844-37.56-19.25-52.05l-71.02-82.86C508.6 102.1 495.3 96 481.3 96H416V64c0-35.35-28.65-64-64-64H128C92.65 0 64 28.65 64 64v32H15.1C7.164 96 0 103.2 0 111.1C0 120.8 7.164 128 15.1 128h224C248.8 128 256 120.8 256 112C256 103.2 248.8 96 240 96H96V64c0-17.67 14.33-32 32-32h224c17.67 0 32 14.33 32 32v224c0 8.836 7.164 16 16 16S416 296.8 416 288V256h160v128h-5.6C557.2 346.8 521.7 320 480 320s-77.18 26.77-90.4 64H250.1C236.9 346.8 201.7 320 160 320c-24.7 0-46.99 9.59-64 24.91V256h144C248.8 256 256 248.8 256 240C256 231.2 248.8 224 240 224h-224C7.164 224 0 231.2 0 240C0 248.8 7.164 256 15.1 256H64v160c0 53.02 42.98 96 96 96s96-42.98 96-96h128c0 52.94 43.06 96 96 96s96-43.06 96-96h48c8.844 0 16-7.156 16-16S632.8 384 624 384zM416 224V128h65.28c4.688 0 9.109 2.031 12.14 5.578l71.03 82.86C566.5 218.8 568.2 221.3 569.7 224H416zM160 480c-35.29 0-64-28.71-64-64s28.71-64 64-64s64 28.71 64 64S195.3 480 160 480zM480 480c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64S515.3 480 480 480z"
-                            fill="currentColor"></path>
-                    </svg>
-                </div>
-                <h3>Free Shipping</h3>
-                <h5>On All Orders</h5>
-            </div>
-            <div class="guarantee">
-                <div class="svg-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-guarantee" aria-hidden="true"
-                        focusable="false" fill="none" viewBox="0 0 448 512">
-                        <path
-                            d="M431.6 225.6l-177.2-177.2c-9.021-9.021-26.84-16.4-39.6-16.4H28c-15.46 0-28 12.54-28 28v186.8c0 12.76 7.381 30.58 16.4 39.6l177.2 177.2C204.5 474.5 218.9 480 233.2 480c14.33 0 28.66-5.469 39.6-16.4l158.8-158.8C453.5 282.9 453.5 247.5 431.6 225.6zM408.1 282.2l-158.8 158.8C245.6 445.5 239.6 448 233.2 448c-6.412 0-12.44-2.496-16.97-7.029L39.03 263.8C36.01 260.8 32 251.1 32 246.8V64h182.8c4.273 0 13.95 4.006 16.97 7.029l177.2 177.2C413.5 252.8 416 258.8 416 265.2C416 271.6 413.5 277.6 408.1 282.2zM111.1 120c-13.25 0-24 10.74-24 24s10.75 24 24 24s24-10.74 24-24S125.2 120 111.1 120z"
-                            fill="currentColor"></path>
-                    </svg>
-                </div>
-                <h3>Best Discounts</h3>
-                <h5>Affordable Products</h5>
-            </div>
-            <div class="guarantee">
-                <div class="svg-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-guarantee" aria-hidden="true"
-                        focusable="false" fill="none" viewBox="0 0 640 512">
-                        <path
-                            d="M368 224c-8.811 0-16.14 7.143-16.14 15.95V352h-256V240c0-8.811-7.143-15.95-15.95-15.95S64 231.2 64 240l-.0001 224c0 26.51 21.49 47.1 48 47.1h224c26.51 0 47.1-21.49 47.1-47.1L384 240C384 231.2 376.9 224 368 224zM352 464c0 8.822-7.178 16-16 16h-224C103.2 480 96 472.8 96 464V384h256V464zM560 224C551.2 224 544 231.2 544 240v256c0 8.836 7.149 16 15.98 16s16-7.164 16-16L576 240C576 231.2 568.8 224 560 224zM632.8 125.7L561.7 19C553.8 7.109 540.5 0 526.2 0H113.8c-14.3 0-27.56 7.109-35.5 19L7.24 125.6C-1.541 138.7-2.4 155.5 5.021 169.4C12.46 183.3 26.9 192 42.71 192h554.6c15.73 0 30.14-8.625 37.58-22.53C642.4 155.6 641.6 138.8 632.8 125.7zM597.3 160H42.71C34.18 160 29.04 150.6 33.83 143.4l71.05-106.7C106.9 33.78 110.2 32 113.8 32h412.4c3.578 0 6.891 1.781 8.875 4.75l71.14 106.7C610.9 150.5 605.8 160 597.3 160z"
-                            fill="currentColor"></path>
-                    </svg>
-                </div>
-                <h3>100% Genuine Products</h3>
-                <h5>Directly From First Bud</h5>
-            </div>
-            <div class="guarantee">
-                <div class="svg-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-guarantee" aria-hidden="true"
-                        focusable="false" fill="none" viewBox="0 0 512 512">
-                        <path
-                            d="M462.3 62.71c-54.5-46.5-136.1-38.99-186.6 13.27l-19.69 20.61l-19.71-20.61C195.6 33.85 113.3 8.71 49.76 62.71C-13.11 116.2-16.31 212.5 39.81 270.5l193.2 199.7C239.3 476.7 247.8 480 255.9 480c8.25 0 16.33-3.25 22.58-9.751l193.6-199.8C528.5 212.5 525.1 116.2 462.3 62.71zM449.3 248.2l-192.9 199.9L62.76 248.2C24.39 208.7 16.39 133.2 70.51 87.09C125.3 40.21 189.8 74.22 213.3 98.59l42.75 44.13l42.75-44.13c23.13-24 88.13-58 142.8-11.5C495.5 133.1 487.6 208.6 449.3 248.2z"
-                            fill="currentColor"></path>
-                    </svg>
-                </div>
-                <h3>Freshest Healthy</h3>
-                <h5>Handpicked Products</h5>
-            </div>
-        </div>
-    </div>
-
-    <div class="page10">
-        <footer>
-            <div class="logo">
-                <img src="assets/images/logo.svg" alt="">
-            </div>
+        <div class="page6">
             <div class="container">
-                <div class="sec aboutus">
-                    <h2>ABOUT FIRST BUD ORGANICS</h2>
-                    <p>At First Bud Organics, we’ve embarked on a journey that bridges the soul of the farmer with the
-                        heart
-                        of your kitchen. Our unwavering commitment to delivering the finest organic produce is a
-                        testament
-                        to the deep respect we hold for our dedicated Kisans.</p>
-                    <ul class="sci">
-                        <li><a target="_blank" href="https://www.facebook.com/Firstbudorganics/"><svg
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                                    color="#000000" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M6.18182 10.3333C5.20406 10.3333 5 10.5252 5 11.4444V13.1111C5 14.0304 5.20406 14.2222 6.18182 14.2222H8.54545V20.8889C8.54545 21.8081 8.74951 22 9.72727 22H12.0909C13.0687 22 13.2727 21.8081 13.2727 20.8889V14.2222H15.9267C16.6683 14.2222 16.8594 14.0867 17.0631 13.4164L17.5696 11.7497C17.9185 10.6014 17.7035 10.3333 16.4332 10.3333H13.2727V7.55556C13.2727 6.94191 13.8018 6.44444 14.4545 6.44444H17.8182C18.7959 6.44444 19 6.25259 19 5.33333V3.11111C19 2.19185 18.7959 2 17.8182 2H14.4545C11.191 2 8.54545 4.48731 8.54545 7.55556V10.3333H6.18182Z"
-                                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
-                                </svg></a></li>
-                        <li><a target="_blank" href="https://www.instagram.com/firstbudorganics/"><svg
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                                    color="#000000" fill="none">
-                                    <path
-                                        d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
-                                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
-                                    <path
-                                        d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z"
-                                        stroke="currentColor" stroke-width="1.5" />
-                                    <path d="M17.5078 6.5L17.4988 6.5" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg></a></li>
-                        <li><a target="_blank" href="https://www.linkedin.com/company/first-bud-organics/"><svg
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                                    color="#ffffff" fill="none">
-                                    <path
-                                        d="M4.5 9.5H4C3.05719 9.5 2.58579 9.5 2.29289 9.79289C2 10.0858 2 10.5572 2 11.5V20C2 20.9428 2 21.4142 2.29289 21.7071C2.58579 22 3.05719 22 4 22H4.5C5.44281 22 5.91421 22 6.20711 21.7071C6.5 21.4142 6.5 20.9428 6.5 20V11.5C6.5 10.5572 6.5 10.0858 6.20711 9.79289C5.91421 9.5 5.44281 9.5 4.5 9.5Z"
-                                        stroke="currentColor" stroke-width="1.5" />
-                                    <path
-                                        d="M6.5 4.25C6.5 5.49264 5.49264 6.5 4.25 6.5C3.00736 6.5 2 5.49264 2 4.25C2 3.00736 3.00736 2 4.25 2C5.49264 2 6.5 3.00736 6.5 4.25Z"
-                                        stroke="currentColor" stroke-width="1.5" />
-                                    <path
-                                        d="M12.326 9.5H11.5C10.5572 9.5 10.0858 9.5 9.79289 9.79289C9.5 10.0858 9.5 10.5572 9.5 11.5V20C9.5 20.9428 9.5 21.4142 9.79289 21.7071C10.0858 22 10.5572 22 11.5 22H12C12.9428 22 13.4142 22 13.7071 21.7071C14 21.4142 14 20.9428 14 20L14.0001 16.5001C14.0001 14.8433 14.5281 13.5001 16.0879 13.5001C16.8677 13.5001 17.5 14.1717 17.5 15.0001V19.5001C17.5 20.4429 17.5 20.9143 17.7929 21.2072C18.0857 21.5001 18.5572 21.5001 19.5 21.5001H19.9987C20.9413 21.5001 21.4126 21.5001 21.7055 21.2073C21.9984 20.9145 21.9985 20.4432 21.9987 19.5006L22.0001 14.0002C22.0001 11.515 19.6364 9.50024 17.2968 9.50024C15.9649 9.50024 14.7767 10.1531 14.0001 11.174C14 10.5439 14 10.2289 13.8632 9.995C13.7765 9.84686 13.6531 9.72353 13.505 9.63687C13.2711 9.5 12.9561 9.5 12.326 9.5Z"
-                                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
-                                </svg></a></li>
-                        <li><a target="_blank" href="https://www.youtube.com/channel/UCMORt8VNt1223yUeJyE_I_A"><svg
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                                    color="#000000" fill="none">
-                                    <path
-                                        d="M12 20.5C13.8097 20.5 15.5451 20.3212 17.1534 19.9934C19.1623 19.5839 20.1668 19.3791 21.0834 18.2006C22 17.0221 22 15.6693 22 12.9635V11.0365C22 8.33073 22 6.97787 21.0834 5.79937C20.1668 4.62088 19.1623 4.41613 17.1534 4.00662C15.5451 3.67877 13.8097 3.5 12 3.5C10.1903 3.5 8.45489 3.67877 6.84656 4.00662C4.83766 4.41613 3.83321 4.62088 2.9166 5.79937C2 6.97787 2 8.33073 2 11.0365V12.9635C2 15.6693 2 17.0221 2.9166 18.2006C3.83321 19.3791 4.83766 19.5839 6.84656 19.9934C8.45489 20.3212 10.1903 20.5 12 20.5Z"
-                                        stroke="currentColor" stroke-width="1.5" />
-                                    <path
-                                        d="M15.9621 12.3129C15.8137 12.9187 15.0241 13.3538 13.4449 14.2241C11.7272 15.1705 10.8684 15.6438 10.1728 15.4615C9.9372 15.3997 9.7202 15.2911 9.53799 15.1438C9 14.7089 9 13.8059 9 12C9 10.1941 9 9.29112 9.53799 8.85618C9.7202 8.70886 9.9372 8.60029 10.1728 8.53854C10.8684 8.35621 11.7272 8.82945 13.4449 9.77593C15.0241 10.6462 15.8137 11.0813 15.9621 11.6871C16.0126 11.8933 16.0126 12.1067 15.9621 12.3129Z"
-                                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
-                                </svg></a></li>
-                    </ul>
+                <div class="image">
+                    <img src="assets/images/image3.png" alt="" />
                 </div>
-                <div class="sec quicklinks">
-                    <h2>Shop</h2>
-                    <ul>
-                        <li><a href="">Herbal Teas</a></li>
-                        <li><a href="">Homemade Pickles</a></li>
-                        <li><a href="">Honey</a></li>
-                        <li><a href="">Immunity Drops</a></li>
-                        <li><a href="">Spices</a></li>
-                        <li><a href="">Sugar Substitute</a></li>
-                    </ul>
-                </div>
-                <div class="sec quicklinks">
-                    <h2>Quick Links</h2>
-                    <ul>
-                        <li><a href="">ODOP</a></li>
-                        <li><a href="">FAQ</a></li>
-                        <li><a href="">Blogs</a></li>
-                        <li><a href="">Our Story</a></li>
-                    </ul>
-                </div>
-
-                <div class="sec quicklinks">
-                    <h2>Policies</h2>
-                    <ul>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Terms & Condition</a></li>
-                        <li><a href="">Return, Refund & Cancellation</a></li>
-                        <li><a href="">Policy</a></li>
-                        <li><a href="">Shipping Policy</a></li>
-                        <li><a href="">Contact Us</a></li>
-                    </ul>
+                <div class="section">
+                    <div class="contain">
+                        <h1>Welcome to the First Bud Organics family!</h1>
+                        <p>
+                            Join Us on a Flavorful, Health-Conscious, and
+                            Eco-Friendly Journey
+                        </p>
+                        <a href="#"><button class="btn">SHOP NOW</button></a>
+                    </div>
                 </div>
             </div>
+        </div>
 
-        </footer>
-        <div class="copyrightText">
-            © 2024,
-            <a href="">First Bud Organics.</a>
-            All rights reserved by Himbuds Vatika Pvt Ltd. <br>
-            <a href="">Designed & Developed by ICraftAds</a>
+        <div class="page7">
+            <div class="testimonials">
+                <h1>Testimonials</h1>
+                <div class="slider">
+                    <div class="item">
+                        <img src="assets/images/testimonials/1.jpg" alt="" />
+                        <h2>Pranali Rane</h2>
+                        <p>
+                            Love the flavor of Honey 100% organic. The best
+                            product quality with reasonable price. mostly
+                            recommended to Buy firstbuds products.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/testimonials/2.jpg" alt="" />
+                        <h2>Author</h2>
+                        <p>
+                            Natural Pahadi raw honey is totally natural and
+                            is of the best quality. I tried it and I’m very
+                            satisfied with the taste. Their products are
+                            value for money and worth buying. I’m a regular
+                            customer of first bud organics. Must try.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/testimonials/3.jpg" alt="" />
+                        <h2>Suvendu Biswas</h2>
+                        <p>
+                            I love their Tulsi Green Tea product, Its really
+                            awesome product and I will suggest to try once.
+                            It will definitely bring smile on your face.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/testimonials/4.jpg" alt="" />
+                        <h2>Sushmita Bhati</h2>
+                        <p>
+                            They have the best organics products. Their
+                            services are very good. And I liked the slim bud
+                            tea which I am using for 15 days and I quite
+                            liked it.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/testimonials/5.jpg" alt="" />
+                        <h2>Mansi Gupta</h2>
+                        <p>
+                            I have used it’s Chai Masala, and I must say,
+                            it’s one of the best Chai Masala you will ever
+                            buy. Amazing taste and will definitely make your
+                            morning different from usual mornings. Using it
+                            since a week and to be continued 😍😍.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/testimonials/6.jpg" alt="" />
+                        <h2>Shahbaz Lakdawala</h2>
+                        <p>
+                            Firstbud organic such an amazing brand. I like
+                            the quality according to price point. Its
+                            totally worth the money, also i love their honey
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/testimonials/7.jpg" alt="" />
+                        <h2>Shradhya Chakraborty</h2>
+                        <p>
+                            I have tried many different brands of green tea,
+                            but this Tulsi Green Tea has been my favorite
+                            since I came across it three years back. The
+                            taste is so much better and so much more
+                            natural.
+                        </p>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <button id="prevtest">&lt</button>
+                    <button id="nexttest">&gt</button>
+                </div>
+            </div>
+        </div>
+        <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/F4ps5Nnl6VE?si=gU0zyVVmA-2_fdEg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="page8">
+            <div class="container">
+                <div class="availableoncontainer">
+                    <div class="heading">
+                        <h2>Also Available on</h2>
+                    </div>
+                    <div class="websites">
+                        <a target="_blank"
+                            href="https://www.amazon.in/s?k=first+bud&adgrpid=1319415559376326&hvadid=82463731607576&hvbmt=bp&hvdev=c&hvlocphy=156162&hvnetw=o&hvqmt=p&hvtargid=kwd-82464351527190%3Aloc-90&hydadcr=10013_1893351&msclkid=d800c5bc387611d155c7a3c647ad85da&tag=msndeskstdin-21&ref=pd_sl_8pantsh0jq_p">
+                            <img src="assets/images/page8/amazon.jpg" alt="" />
+                        </a>
+                        <a target="_blank"
+                            href="https://www.flipkart.com/search?q=First+Bud+Organics+&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&as-pos=1&as-type=HISTORY">
+                            <img src="assets/images/page8/flipkart.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="certificationbycontainer">
+                    <div class="heading">
+                        <h2>Certification by</h2>
+                    </div>
+                    <div class="organisations">
+                        <a href="#">
+                            <img src="assets/images/page8/fssai.jpg" alt="" />
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/page8/usfooddrug.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page9">
+            <div class="container">
+                <div class="left">
+                    <img height="566px" src="assets/images/basket/5.jpg" alt="" />
+                </div>
+                <div class="right">
+                    <h5>BUNDLE & SAVE</h5>
+                    <h2>Build Your Own Basket</h2>
+                    <div class="section">
+                        <div class="img">
+                            <img src="assets/images/basket/1.jpg" alt="" />
+                        </div>
+                        <div class="des">
+                            <div class="content">
+                                <div class="name">Pahadi Honey</div>
+                                <div class="buttons">
+                                    <div class="quantity">
+                                        <select>
+                                            <option value="1">500gm</option>
+                                        </select>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        Add to Cart &rarr;
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span class="new">Rs.499.00</span>
+                                <span class="old">Rs. 590.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="img">
+                            <img src="assets/images/basket/2.jpg" alt="" />
+                        </div>
+                        <div class="des">
+                            <div class="content">
+                                <div class="name">
+                                    Lakadong Turmeric Powder
+                                </div>
+                                <div class="buttons">
+                                    <div class="quantity">
+                                        <select>
+                                            <option value="1">
+                                                250 gm
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        Add to Cart &rarr;
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span class="new">Rs.299.00</span>
+                                <span class="old">Rs. 365.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="img">
+                            <img src="assets/images/basket/3.jpg" alt="" />
+                        </div>
+                        <div class="des">
+                            <div class="content">
+                                <div class="name">
+                                    Home Made Mango Pickle
+                                </div>
+                                <div class="buttons">
+                                    <div class="quantity">
+                                        <select>
+                                            <option value="1">
+                                                500 gm / single
+                                            </option>
+                                            <option value="2">
+                                                500 gm / pack of 2
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        Add to Cart &rarr;
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span class="new">Rs.449.00</span>
+                                <span class="old">Rs. 499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="img">
+                            <img src="assets/images/basket/4.jpg" alt="" />
+                        </div>
+                        <div class="des">
+                            <div class="content">
+                                <div class="name">Detox Tea Combo</div>
+                                <div class="buttons">
+                                    <div class="quantity">
+                                        <select>
+                                            <option value="1">
+                                                100 gm | 50 Cup
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        Add to Cart &rarr;
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span class="new">Rs.499.00</span>
+                                <span class="old">Rs. 640.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#"><button class="add-set btn">
+                            ADD SET TO CART
+                        </button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="page9-1">
+            <div class="flex-Container">
+                <div class="guarantee">
+                    <div class="svg-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-guarantee" aria-hidden="true"
+                            focusable="false" fill="none" viewBox="0 0 640 512">
+                            <path
+                                d="M272 192C280.8 192 288 184.8 288 176C288 167.2 280.8 160 272 160h-224C39.16 160 32 167.2 32 176C32 184.8 39.16 192 47.1 192H272zM624 384H608V247.7c0-19.08-6.844-37.56-19.25-52.05l-71.02-82.86C508.6 102.1 495.3 96 481.3 96H416V64c0-35.35-28.65-64-64-64H128C92.65 0 64 28.65 64 64v32H15.1C7.164 96 0 103.2 0 111.1C0 120.8 7.164 128 15.1 128h224C248.8 128 256 120.8 256 112C256 103.2 248.8 96 240 96H96V64c0-17.67 14.33-32 32-32h224c17.67 0 32 14.33 32 32v224c0 8.836 7.164 16 16 16S416 296.8 416 288V256h160v128h-5.6C557.2 346.8 521.7 320 480 320s-77.18 26.77-90.4 64H250.1C236.9 346.8 201.7 320 160 320c-24.7 0-46.99 9.59-64 24.91V256h144C248.8 256 256 248.8 256 240C256 231.2 248.8 224 240 224h-224C7.164 224 0 231.2 0 240C0 248.8 7.164 256 15.1 256H64v160c0 53.02 42.98 96 96 96s96-42.98 96-96h128c0 52.94 43.06 96 96 96s96-43.06 96-96h48c8.844 0 16-7.156 16-16S632.8 384 624 384zM416 224V128h65.28c4.688 0 9.109 2.031 12.14 5.578l71.03 82.86C566.5 218.8 568.2 221.3 569.7 224H416zM160 480c-35.29 0-64-28.71-64-64s28.71-64 64-64s64 28.71 64 64S195.3 480 160 480zM480 480c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64S515.3 480 480 480z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h3>Free Shipping</h3>
+                    <h5>On All Orders</h5>
+                </div>
+                <div class="guarantee">
+                    <div class="svg-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-guarantee" aria-hidden="true"
+                            focusable="false" fill="none" viewBox="0 0 448 512">
+                            <path
+                                d="M431.6 225.6l-177.2-177.2c-9.021-9.021-26.84-16.4-39.6-16.4H28c-15.46 0-28 12.54-28 28v186.8c0 12.76 7.381 30.58 16.4 39.6l177.2 177.2C204.5 474.5 218.9 480 233.2 480c14.33 0 28.66-5.469 39.6-16.4l158.8-158.8C453.5 282.9 453.5 247.5 431.6 225.6zM408.1 282.2l-158.8 158.8C245.6 445.5 239.6 448 233.2 448c-6.412 0-12.44-2.496-16.97-7.029L39.03 263.8C36.01 260.8 32 251.1 32 246.8V64h182.8c4.273 0 13.95 4.006 16.97 7.029l177.2 177.2C413.5 252.8 416 258.8 416 265.2C416 271.6 413.5 277.6 408.1 282.2zM111.1 120c-13.25 0-24 10.74-24 24s10.75 24 24 24s24-10.74 24-24S125.2 120 111.1 120z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h3>Best Discounts</h3>
+                    <h5>Affordable Products</h5>
+                </div>
+                <div class="guarantee">
+                    <div class="svg-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-guarantee" aria-hidden="true"
+                            focusable="false" fill="none" viewBox="0 0 640 512">
+                            <path
+                                d="M368 224c-8.811 0-16.14 7.143-16.14 15.95V352h-256V240c0-8.811-7.143-15.95-15.95-15.95S64 231.2 64 240l-.0001 224c0 26.51 21.49 47.1 48 47.1h224c26.51 0 47.1-21.49 47.1-47.1L384 240C384 231.2 376.9 224 368 224zM352 464c0 8.822-7.178 16-16 16h-224C103.2 480 96 472.8 96 464V384h256V464zM560 224C551.2 224 544 231.2 544 240v256c0 8.836 7.149 16 15.98 16s16-7.164 16-16L576 240C576 231.2 568.8 224 560 224zM632.8 125.7L561.7 19C553.8 7.109 540.5 0 526.2 0H113.8c-14.3 0-27.56 7.109-35.5 19L7.24 125.6C-1.541 138.7-2.4 155.5 5.021 169.4C12.46 183.3 26.9 192 42.71 192h554.6c15.73 0 30.14-8.625 37.58-22.53C642.4 155.6 641.6 138.8 632.8 125.7zM597.3 160H42.71C34.18 160 29.04 150.6 33.83 143.4l71.05-106.7C106.9 33.78 110.2 32 113.8 32h412.4c3.578 0 6.891 1.781 8.875 4.75l71.14 106.7C610.9 150.5 605.8 160 597.3 160z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h3>100% Genuine Products</h3>
+                    <h5>Directly From First Bud</h5>
+                </div>
+                <div class="guarantee">
+                    <div class="svg-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-guarantee" aria-hidden="true"
+                            focusable="false" fill="none" viewBox="0 0 512 512">
+                            <path
+                                d="M462.3 62.71c-54.5-46.5-136.1-38.99-186.6 13.27l-19.69 20.61l-19.71-20.61C195.6 33.85 113.3 8.71 49.76 62.71C-13.11 116.2-16.31 212.5 39.81 270.5l193.2 199.7C239.3 476.7 247.8 480 255.9 480c8.25 0 16.33-3.25 22.58-9.751l193.6-199.8C528.5 212.5 525.1 116.2 462.3 62.71zM449.3 248.2l-192.9 199.9L62.76 248.2C24.39 208.7 16.39 133.2 70.51 87.09C125.3 40.21 189.8 74.22 213.3 98.59l42.75 44.13l42.75-44.13c23.13-24 88.13-58 142.8-11.5C495.5 133.1 487.6 208.6 449.3 248.2z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h3>Freshest Healthy</h3>
+                    <h5>Handpicked Products</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="page10">
+            <footer>
+                <div class="logo">
+                    <img src="assets/images/logo.svg" alt="" />
+                </div>
+                <div class="container">
+                    <div class="sec aboutus">
+                        <h2>ABOUT FIRST BUD ORGANICS</h2>
+                        <p>
+                            At First Bud Organics, we’ve embarked on a
+                            journey that bridges the soul of the farmer with
+                            the heart of your kitchen. Our unwavering
+                            commitment to delivering the finest organic
+                            produce is a testament to the deep respect we
+                            hold for our dedicated Kisans.
+                        </p>
+                        <ul class="sci">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/Firstbudorganics/"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                        color="#000000" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.18182 10.3333C5.20406 10.3333 5 10.5252 5 11.4444V13.1111C5 14.0304 5.20406 14.2222 6.18182 14.2222H8.54545V20.8889C8.54545 21.8081 8.74951 22 9.72727 22H12.0909C13.0687 22 13.2727 21.8081 13.2727 20.8889V14.2222H15.9267C16.6683 14.2222 16.8594 14.0867 17.0631 13.4164L17.5696 11.7497C17.9185 10.6014 17.7035 10.3333 16.4332 10.3333H13.2727V7.55556C13.2727 6.94191 13.8018 6.44444 14.4545 6.44444H17.8182C18.7959 6.44444 19 6.25259 19 5.33333V3.11111C19 2.19185 18.7959 2 17.8182 2H14.4545C11.191 2 8.54545 4.48731 8.54545 7.55556V10.3333H6.18182Z"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg></a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.instagram.com/firstbudorganics/"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                        color="#000000" fill="none">
+                                        <path
+                                            d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                        <path
+                                            d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z"
+                                            stroke="currentColor" stroke-width="1.5" />
+                                        <path d="M17.5078 6.5L17.4988 6.5" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.linkedin.com/company/first-bud-organics/"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                        color="#ffffff" fill="none">
+                                        <path
+                                            d="M4.5 9.5H4C3.05719 9.5 2.58579 9.5 2.29289 9.79289C2 10.0858 2 10.5572 2 11.5V20C2 20.9428 2 21.4142 2.29289 21.7071C2.58579 22 3.05719 22 4 22H4.5C5.44281 22 5.91421 22 6.20711 21.7071C6.5 21.4142 6.5 20.9428 6.5 20V11.5C6.5 10.5572 6.5 10.0858 6.20711 9.79289C5.91421 9.5 5.44281 9.5 4.5 9.5Z"
+                                            stroke="currentColor" stroke-width="1.5" />
+                                        <path
+                                            d="M6.5 4.25C6.5 5.49264 5.49264 6.5 4.25 6.5C3.00736 6.5 2 5.49264 2 4.25C2 3.00736 3.00736 2 4.25 2C5.49264 2 6.5 3.00736 6.5 4.25Z"
+                                            stroke="currentColor" stroke-width="1.5" />
+                                        <path
+                                            d="M12.326 9.5H11.5C10.5572 9.5 10.0858 9.5 9.79289 9.79289C9.5 10.0858 9.5 10.5572 9.5 11.5V20C9.5 20.9428 9.5 21.4142 9.79289 21.7071C10.0858 22 10.5572 22 11.5 22H12C12.9428 22 13.4142 22 13.7071 21.7071C14 21.4142 14 20.9428 14 20L14.0001 16.5001C14.0001 14.8433 14.5281 13.5001 16.0879 13.5001C16.8677 13.5001 17.5 14.1717 17.5 15.0001V19.5001C17.5 20.4429 17.5 20.9143 17.7929 21.2072C18.0857 21.5001 18.5572 21.5001 19.5 21.5001H19.9987C20.9413 21.5001 21.4126 21.5001 21.7055 21.2073C21.9984 20.9145 21.9985 20.4432 21.9987 19.5006L22.0001 14.0002C22.0001 11.515 19.6364 9.50024 17.2968 9.50024C15.9649 9.50024 14.7767 10.1531 14.0001 11.174C14 10.5439 14 10.2289 13.8632 9.995C13.7765 9.84686 13.6531 9.72353 13.505 9.63687C13.2711 9.5 12.9561 9.5 12.326 9.5Z"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg></a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com/channel/UCMORt8VNt1223yUeJyE_I_A"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                        color="#000000" fill="none">
+                                        <path
+                                            d="M12 20.5C13.8097 20.5 15.5451 20.3212 17.1534 19.9934C19.1623 19.5839 20.1668 19.3791 21.0834 18.2006C22 17.0221 22 15.6693 22 12.9635V11.0365C22 8.33073 22 6.97787 21.0834 5.79937C20.1668 4.62088 19.1623 4.41613 17.1534 4.00662C15.5451 3.67877 13.8097 3.5 12 3.5C10.1903 3.5 8.45489 3.67877 6.84656 4.00662C4.83766 4.41613 3.83321 4.62088 2.9166 5.79937C2 6.97787 2 8.33073 2 11.0365V12.9635C2 15.6693 2 17.0221 2.9166 18.2006C3.83321 19.3791 4.83766 19.5839 6.84656 19.9934C8.45489 20.3212 10.1903 20.5 12 20.5Z"
+                                            stroke="currentColor" stroke-width="1.5" />
+                                        <path
+                                            d="M15.9621 12.3129C15.8137 12.9187 15.0241 13.3538 13.4449 14.2241C11.7272 15.1705 10.8684 15.6438 10.1728 15.4615C9.9372 15.3997 9.7202 15.2911 9.53799 15.1438C9 14.7089 9 13.8059 9 12C9 10.1941 9 9.29112 9.53799 8.85618C9.7202 8.70886 9.9372 8.60029 10.1728 8.53854C10.8684 8.35621 11.7272 8.82945 13.4449 9.77593C15.0241 10.6462 15.8137 11.0813 15.9621 11.6871C16.0126 11.8933 16.0126 12.1067 15.9621 12.3129Z"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h2>Shop</h2>
+                        <ul>
+                            <li><a href="">Herbal Teas</a></li>
+                            <li><a href="">Homemade Pickles</a></li>
+                            <li><a href="">Honey</a></li>
+                            <li><a href="">Immunity Drops</a></li>
+                            <li><a href="">Spices</a></li>
+                            <li><a href="">Sugar Substitute</a></li>
+                        </ul>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <li><a href="">ODOP</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Blogs</a></li>
+                            <li><a href="">Our Story</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sec quicklinks">
+                        <h2>Policies</h2>
+                        <ul>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Terms & Condition</a></li>
+                            <li>
+                                <a href="">Return, Refund & Cancellation</a>
+                            </li>
+                            <li><a href="">Policy</a></li>
+                            <li><a href="">Shipping Policy</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            <div class="copyrightText">
+                © 2024,
+                <a href="">First Bud Organics.</a>
+                All rights reserved by Himbuds Vatika Pvt Ltd. <br />
+                <a href="">Designed & Developed by ICraftAds</a>
+            </div>
+        </div>
+
+        <div class="side-container">
+            <a target="_blank" href="https://www.facebook.com/Firstbudorganics/">
+                <svg aria-hidden="true" focusable="false" class="icon icon-facebook" viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                    </path>
+                </svg>
+            </a>
+
+            <a target="_blank" href="https://www.instagram.com/firstbudorganics/">
+                <svg aria-hidden="true" focusable="false" class="icon icon-instagram" viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                    </path>
+                </svg>
+            </a>
+
+            <a target="_blank" href="https://www.linkedin.com/company/first-bud-organics/">
+                <svg aria-hidden="true" focusable="false" class="icon icon-linkedin" viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                    </path>
+                </svg>
+            </a>
+
+            <a target="_blank" href="https://www.youtube.com/channel/UCMORt8VNt1223yUeJyE_I_A">
+                <svg aria-hidden="true" focusable="false" class="icon icon-youtube" viewBox="0 0 576 512">
+                    <path fill="currentColor"
+                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                    </path>
+                </svg>
+            </a>
+
+            <div class="name">As Seen On Shark Tank</div>
         </div>
     </div>
+    <script src="scripts/page1.js"></script>
 
-    <div class="side-container">
-        <a target="_blank" href="https://www.facebook.com/Firstbudorganics/">
-            <svg aria-hidden="true" focusable="false" class="icon icon-facebook" viewBox="0 0 320 512">
-                <path fill="currentColor"
-                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
-                </path>
-            </svg>
-        </a>
-
-        <a target="_blank" href="https://www.instagram.com/firstbudorganics/">
-            <svg aria-hidden="true" focusable="false" class="icon icon-instagram" viewBox="0 0 448 512">
-                <path fill="currentColor"
-                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
-                </path>
-            </svg>
-        </a>
-
-        <a target="_blank" href="https://www.linkedin.com/company/first-bud-organics/">
-            <svg aria-hidden="true" focusable="false" class="icon icon-linkedin" viewBox="0 0 448 512">
-                <path fill="currentColor"
-                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                </path>
-            </svg>
-        </a>
-
-        <a target="_blank" href="https://www.youtube.com/channel/UCMORt8VNt1223yUeJyE_I_A">
-            <svg aria-hidden="true" focusable="false" class="icon icon-youtube" viewBox="0 0 576 512">
-                <path fill="currentColor"
-                    d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
-                </path>
-            </svg>
-        </a>
-
-        <div class="name">As Seen On Shark Tank</div>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="scripts/locomotive.js"></script>
 
     <script src="scripts/script2.js"></script>
     <script>
@@ -868,19 +943,18 @@
 
         let spans = document.querySelectorAll("span");
         window.addEventListener("scroll", () => {
-            scrollDistance = window.scrollY - (window.innerHeight / 2);
+            scrollDistance = window.scrollY - window.innerHeight / 2;
 
             spans.forEach((span, index) => {
                 if (span.parentElement.nodeName === "H1") {
-                    if (scrollDistance >= ((index + 1) * 8)) {
+                    if (scrollDistance >= (index + 1) * 8) {
                         span.classList.add("activeh1");
-
                     } else {
                         span.classList.remove("activeh1");
                     }
                 }
                 if (span.parentElement.nodeName === "P") {
-                    if (scrollDistance >= ((index + 1) * 0.8)) {
+                    if (scrollDistance >= (index + 1) * 0.8) {
                         span.classList.add("activep");
                     } else {
                         span.classList.remove("activep");
@@ -893,7 +967,6 @@
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="scripts/page1.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
         integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
@@ -926,17 +999,17 @@
         );
     </script>
     <script>
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropDown = document.querySelector('.dropmenu')
+        const toggleBtn = document.querySelector(".toggle_btn");
+        const toggleBtnIcon = document.querySelector(".toggle_btn i");
+        const dropDown = document.querySelector(".dropmenu");
 
         toggleBtn.onclick = function () {
-            dropDown.classList.toggle('open')
-            const isOpen = dropDown.classList.contains('open')
+            dropDown.classList.toggle("open");
+            const isOpen = dropDown.classList.contains("open");
             toggleBtnIcon.classList = isOpen
                 ? "fa-solid fa-xmark"
-                : "fa-solid fa-bars"
-        }
+                : "fa-solid fa-bars";
+        };
     </script>
     <script src="scripts/script.js"></script>
     <script src="scripts/script1.js"></script>
