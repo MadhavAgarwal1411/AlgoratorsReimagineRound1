@@ -31,7 +31,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif,system-ui;
 }
 html, body{
     width: 100%;
@@ -557,6 +557,7 @@ body::-webkit-scrollbar{
     color: #00662D;
     text-align: center;
     margin-bottom: 60px;
+    font-size: 2.5rem;
 }
 .page3 .container{
     position: relative;
@@ -700,7 +701,6 @@ body::-webkit-scrollbar{
 .page4 .container .section .contain h1{
     font-size: 2.5rem;
     color: #00662D;
-    font-weight: 600;
 }
 .page4 .container .section .contain p{
     font-size: 1.2rem;
@@ -1231,13 +1231,13 @@ body::-webkit-scrollbar{
 
 }
 .certificationbycontainer .heading{
-    margin-bottom: 40px;
+    margin-bottom: 40px; 
 }
 
 .page8 .container h2{
     text-align: center;
-    font-size: xx-large;
     color: green;
+    font-size: 2.5rem;
 }
 .page8 a img{
     width: 200px;
