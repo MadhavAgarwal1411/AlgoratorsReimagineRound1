@@ -38,3 +38,5 @@ const showSlider=(type)=>{
 let refreshpro=setInterval(()=>{
     nextButton.click()
 },4500)
+
+

@@ -93,7 +93,7 @@
             <input id="slide2" type="radio" name="group" />
             <input id="slide3" type="radio" name="group" />
             <div class="dots">
-                <label class="label" for="slide1"></label>
+                <label class="label" for="slide1" onClick="ckeck()"></label>
                 <label class="label" for="slide2"></label>
                 <label class="label" for="slide3"></label>
             </div>
@@ -866,6 +866,16 @@
     <script src="scripts/locomotive.js"></script>
     <script src="scripts/page1.js"></script>
 
+    <script type = "text/javascript">
+        var counter = 1;
+        setInterval(function() {
+            document.getElementById("slide"+ counter).checked = "true";
+            counter++;
+            if(counter > 3){
+                counter = 1;
+            }
+        },5000)
+      </script>
 
 
     <script src="scripts/script2.js"></script>
