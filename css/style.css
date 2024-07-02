@@ -215,11 +215,11 @@ body::-webkit-scrollbar{
 
 /* page1 */
 
-/* .page1 {
+.page1 {
     position: relative;
-    background: #000;
+    /* background: #000; */
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,10 +263,14 @@ body::-webkit-scrollbar{
     position: absolute;
     top: 0;
     left: 0;
+    /*
+    width: 100vh;
+    height: 100vw;
+    background: var(--img); */
+    /* background-size: inherit; */
     width: 100%;
     height: 100%;
-    background: var(--img);
-    background-size: cover;
+    object-fit: inherit;
     clip-path: circle(0% at 0% 50%);
     transition: 1.5s;
     transition-delay: 0s;
@@ -283,8 +287,8 @@ body::-webkit-scrollbar{
 .page1 input:nth-child(3):checked ~ .slider .slide:nth-child(3){
     clip-path: circle(150% at 50% 50%);
     transition-delay: 1s;
-} */
-
+} 
+/* 
 .page1{
     position: relative;
     height: 100vh;
@@ -346,7 +350,7 @@ body::-webkit-scrollbar{
 .page1 .prefix, .names, .years{
     position: relative;
     top: 0;
-}
+} */
 
 
 @media(max-width: 3900px){
