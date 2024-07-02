@@ -1,7 +1,5 @@
 let nextButton=document.getElementById('next');
 let prevButton=document.getElementById('prev');
-let backButton=document.getElementById('back');
-let seeMoreButtons=document.querySelector('.seeMore');
 let page5=document.querySelector('.page5');
 let listHTML=document.querySelector('.page5 .list');
 
@@ -26,9 +24,17 @@ const showSlider=(type)=>{
         listHTML.prepend(items[positionLast]);
         page5.classList.add('prev')
     }
+    clearInterval(refreshpro)
+    refreshpro=setInterval(()=>{
+        nextButton.click()
+    },4500)
     clearTimeout(unAcceptClick);
     unAcceptClick=setTimeout(() => {
     nextButton.style.pointerEvents='auto'
     prevButton.style.pointerEvents='auto'
     }, 2000);
 }
+
+let refreshpro=setInterval(()=>{
+    nextButton.click()
+},4500)
