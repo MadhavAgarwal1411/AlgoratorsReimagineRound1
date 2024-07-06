@@ -113,7 +113,7 @@ body::-webkit-scrollbar{
 
 
 .page0{
-    z-index: 1000;
+    z-index: 9999;
     background-color: #000;
     position: fixed;
     top: 0;
@@ -1011,7 +1011,7 @@ body::-webkit-scrollbar{
     width: 500px;
     height: 300px;
     content: "";
-    background: linear-gradient(45deg, #dc422a,blue);
+    background: linear-gradient(#dc422a, blue);
     position: absolute;
     z-index: -1;
     border-radius: 20% 30% 80% 10%;
@@ -1607,28 +1607,6 @@ body::-webkit-scrollbar{
 }
 .btn span.hover{
     transform: translateY(-35px);
-}
-
-/* side bar */
-.side-container{
-    position: fixed;
-    left: -130px;
-    top: 50%;
-    display: flex;
-    align-items: center;
-    transform: rotate(90deg);
-    z-index: 50;
-}
-
-.side-container a{
-    text-decoration: none;
-    color: #000;
-}
-
-.side-container svg{
-    width: 15px;
-    transform: rotate(-90deg);
-    margin: 5px;
 }
 
 .iframe-container{
